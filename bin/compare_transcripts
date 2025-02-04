@@ -1,0 +1,22 @@
+#!/bin/env python3
+import activate_venv
+import argparse
+import logging
+
+from transcript.transcript import Transcript
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--debug', default=False, action="store_true", help="Enable debugging messages")
+    args = parser.parse_args()
+
+    logging.basicConfig(level=logging.DEBUG if args.debug else logging.INFO,
+                        format="%(asctime)s [%(process)d:%(filename)s:%(lineno)d] [%(levelname)s] %(message)s")
+
+
+
+
+
+
+if __name__ == "__main__":
+    main()
