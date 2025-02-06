@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <style>
+            .insert {
+                background-color: green;
+            }
+            .delete {
+                background-color: red;
+            }
+        </style>
+        <title>{{ title }}</title>
+    </head>
+    <body>
+        <h1>{{ title }}</h1>
+        <table>
+            <thead>
+                <tr>
+                {% for h in hyp %}
+                    <th>{{ h }}</th>
+                {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </body>
+</html>
