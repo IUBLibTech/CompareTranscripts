@@ -60,6 +60,22 @@
                     {% endfor %}
                 </tr>
 
+                <!-- Dropouts -->
+                <tr valign="top">
+                    <td>Dropouts</td>
+                    {% for h in hyp.values() %}
+                    <td>
+                        {{ h.dropouts | length }}
+                        <ul>
+                            {% for x in h.dropouts %}
+                            <li>{{ x.words }}</li>
+                            {% endfor %}
+                        </ul>
+                    </td>
+                    {% endfor %}
+                </tr>
+
+
                 <!-- edits -->                
                 {% for i in range(sentence_count) %}
                     <tr valign="top">

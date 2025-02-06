@@ -80,7 +80,7 @@ def html_difference(edits: list[WordEdit], original_words: bool=False,
         sentence_length += 1
 
         if split_sentences and sentence_length > 0 and edit.refword != '' and edit.refword.strip()[-1] in ('!', '.', '?'):
-            html_text += edit.refword.strip()[-1] + "<p>"
+            html_text += (edit.refword.strip()[-1] if not original_words else '') + "<p>"
             sentence_length = 0
 
     return html_text
