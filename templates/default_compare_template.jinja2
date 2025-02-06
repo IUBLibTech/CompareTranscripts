@@ -2,25 +2,73 @@
     <head>
         <style>
             .insert {
-                background-color: green;
+                background-color: #c0ffc0;
+                font-style: italic;
             }
             .delete {
-                background-color: red;
+                background-color: #ffc0c0;
+                text-decoration: line-through;
             }
         </style>
         <title>{{ title }}</title>
     </head>
     <body>
         <h1>{{ title }}</h1>
+        The original text has a total of {{ sentence_count }} sentences.
         <table>
             <thead>
                 <tr>
+                    <td></td>
                 {% for h in hyp %}
                     <th>{{ h }}</th>
                 {% endfor %}
                 </tr>
             </thead>
             <tbody>
+                <!-- statistics -->
+                {% for s in ('wer', 'mer', 'wil', 'wip') %}
+                <tr>
+                    <td>{{ s }}</td>
+                {% for h in hyp.values() %}
+                    <td>{{ "%0.2f"|format(h.statistics[s] * 100) }}%</td>
+                {% endfor %}
+                <tr>
+                {% endfor %}
+                
+                <!-- edit statistics -->
+                {% for s in ('hits', 'substitutions', 'insertions', 'deletions') %}
+                <tr valign="top">
+                    <td>{{ s }}</td>
+                {% for h in hyp.values() %}
+                    <td>{{ h.edit_statistics[s] }}</td>
+                {% endfor %}
+                </tr>
+                {% endfor %}
+                
+                <!-- hallucinations -->
+                <tr valign="top">
+                    <td>Hallucinations</td>
+                    {% for h in hyp.values() %}
+                    <td>
+                        {{ h.hallucinations | length }}
+                        <ul>
+                            {% for x in h.hallucinations %}
+                            <li>{{ x.words }}</li>
+                            {% endfor %}
+                        </ul>
+                    </td>
+                    {% endfor %}
+                </tr>
+
+                <!-- edits -->                
+                {% for i in range(sentence_count) %}
+                    <tr valign="top">
+                    <td></td>
+                {% for h in hyp.values() %}
+                    <td>{{ h.edits[i] }}</td>
+                {% endfor %}
+                    </tr>
+                {% endfor %}
 
             </tbody>
         </table>

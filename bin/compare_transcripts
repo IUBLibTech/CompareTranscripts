@@ -11,14 +11,23 @@ from transcript.compare import Compare
 from transcript.render import fixed_width_text, html_difference
 from transcript.filters import strip_case, remove_punctuation, remove_numeric_commas
 from transcript.transforms import numbers_to_words
+from transcript.analyze import find_hallucinations
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--debug', default=False, action="store_true", help="Enable debugging messages")
-    parser.add_argument('--differences', default=False, action="store_true", help="Only show differences")
     parser.add_argument('--html-template', type=Path, default=None, help="HTML template file")
     parser.add_argument('--html-insert-class', default='insert', help='CSS class to use for insert text')
     parser.add_argument('--html-delete-class', default='delete', help='CSS class to use for deleted text')
+    parser.add_argument('--html-one-edit', default=False, action='store_true', help="don't split the text for readability")
+    parser.add_argument('--start-hallucination-length', type=int, default=2, help="Hallucination length at the start of the transcript")
+    parser.add_argument('--start-hallucination-ratio', type=float, default=1.0, help="Ratio of inserts to total length of hallucination at the start of the transcript")
+    parser.add_argument('--mid-hallucination-length', type=int, default=4, help="Hallucination length int he middle of the transcript")
+    parser.add_argument('--mid-hallucination-ratio', type=float, default=1.0, help="Ratio of inserts to total length of hallucination in the middle of the transcript")
+    parser.add_argument('--end-hallucination-length', type=int, default=4, help="Hallucination length at the end of the transcript")
+    parser.add_argument('--end-hallucination-ratio', type=float, default=1.0, help="Ratio of inserts to total length of hallucination at the end of the transcript")
+    parser.add_argument('--output', required=True, type=Path, help="Output file")
+    parser.add_argument('--comparison-words', default=False, action='store_true', help="Show comparison words instead of original words")
     parser.add_argument('reference', type=Path, help='Reference transcript')
     parser.add_argument('hypothesis', nargs='+', type=Path, help='Hypothesis transcript(s)')
 
@@ -42,11 +51,35 @@ def main():
                     transforms=[numbers_to_words],
                     filters=[strip_case, remove_punctuation, remove_numeric_commas])    
 
-        results['hyp'][hyp.name] = {
+        hallucinations = []
+        for h in find_hallucinations(cmp.edits(),
+                                     start_length=args.start_hallucination_length,
+                                     start_ratio=args.start_hallucination_ratio,
+                                     mid_length=args.mid_hallucination_length,
+                                     mid_ratio=args.mid_hallucination_ratio,
+                                     end_length=args.end_hallucination_length,
+                                     end_ratio=args.end_hallucination_ratio):
+            hwords = [x.hyp if args.comparison_words else x.hypword for x in h['edits']]            
+            hallucinations.append({'start': h['start'], 'words': ' '.join(hwords)})
+        
+
+
+
+        results['hyp'][hypname.name] = {
             'statistics': cmp.statistics(),
             'edit_statistics': cmp.edit_statistics(),
-            'edits': html_difference(cmp.edits(), original_words=True)
+            'edits': html_difference(cmp.edits(), 
+                                     original_words=not args.comparison_words,
+                                     split_sentences=not args.html_one_edit,
+                                     insert_class=args.html_insert_class,
+                                     delete_class=args.html_delete_class).split('<p>'),
+            'hallucinations': hallucinations,
         }
+
+        results['sentence_count'] = len(results['hyp'][hypname.name]['edits'])
+
+
+
 
         #print(cmp.edit_statistics())
         #print(cmp.statistics())
@@ -58,7 +91,8 @@ def main():
     environment = Environment(loader=FileSystemLoader(args.html_template.parent))
     template = environment.get_template(args.html_template.name)
 
-    print(template.render(results))
+    with open(args.output, "w") as f:
+        f.write(template.render(results))
 
 
 

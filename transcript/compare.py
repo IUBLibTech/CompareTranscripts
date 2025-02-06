@@ -66,7 +66,7 @@ class Compare:
             for chunk in chunks:
                 if chunk.type in ('equal', 'substitute'):
                     # copy ref, and hyp words
-                    t = None if chunk.type == 'equal' else 'S'
+                    t = '' if chunk.type == 'equal' else 'S'
                     for i in range(chunk.ref_end_idx - chunk.ref_start_idx):                
                         results.append(WordEdit(gt[i + chunk.ref_start_idx],
                                                 hp[i + chunk.hyp_start_idx],
@@ -77,19 +77,19 @@ class Compare:
                 elif chunk.type == 'insert':
                     # hyp has an additional word that's not in ref.                
                     for i in range(chunk.hyp_end_idx - chunk.hyp_start_idx):                
-                        results.append(WordEdit(None,
+                        results.append(WordEdit('',
                                                 hp[i + chunk.hyp_start_idx],
                                                 'I',
-                                                None,
+                                                '',
                                                 hwords[i + chunk.hyp_start_idx]))
                 elif chunk.type == 'delete':
                     # ref has an additional word that's not in hyp.                
                     for i in range(chunk.ref_end_idx - chunk.ref_start_idx): 
                         results.append(WordEdit(gt[i + chunk.ref_start_idx],
-                                                None,
+                                                '',
                                                 'D',
                                                 rwords[i + chunk.ref_start_idx],
-                                                None))
+                                                ''))
 
         return results
 

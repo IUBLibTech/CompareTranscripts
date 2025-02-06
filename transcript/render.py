@@ -4,15 +4,13 @@ from .compare import WordEdit, Compare
 
 def pad_wordedit(wordedit: WordEdit) -> WordEdit:
     """Given a word edit pad all of the words so they have the same width"""
-    ref, hyp, edit, refword, hypword = ['' if x is None else x for x in wordedit]    
+    ref, hyp, edit, refword, hypword = wordedit    
     clen = max(len(ref), len(hyp))
     olen = max(len(refword), len(hypword))    
     ref = ref.ljust(clen)
     hyp = hyp.ljust(clen)
     refword = refword.ljust(olen)
     hypword = hypword.ljust(olen)
-    if edit == '':
-        edit = None
     return WordEdit(ref, hyp, edit, refword, hypword)
     
 
@@ -26,7 +24,7 @@ def fixed_width_text(edits: list[WordEdit], width=75, only_differences=False,
         hword = edit.hypword if original_words else edit.hyp
         wlen = len(rword)
         d = 0
-        if edit.edit is None:
+        if edit.edit == '':
             ctext = ' ' * wlen
         elif edit.edit == 'S':
             ctext = 'S' * wlen
@@ -63,18 +61,15 @@ def fixed_width_text(edits: list[WordEdit], width=75, only_differences=False,
 
 
 def html_difference(edits: list[WordEdit], original_words: bool=False,
-                    insert_class='insert', delete_class='delete') -> str:
+                    insert_class: str='insert', delete_class: str='delete',
+                    split_sentences: bool=False) -> str:
     """Render the text as html with <span> sections for the same/add/remove bits"""
     html_text = ""
-    # go through the edits and change all of the None values for the words to 
-    # an empty string.
-    
-
+    sentence_length = 0
     for edit in edits:        
-        print(edit.refword, edit.hypword)
         rword = html.escape(edit.refword if original_words else edit.ref)
         hword = html.escape(edit.hypword if original_words else edit.hyp)
-        if edit.edit is None:
+        if edit.edit == '':
             html_text += hword + " "
         elif edit.edit == 'S':
             html_text += f'<span class="{delete_class}">{rword}</span><span class="{insert_class}">{hword}</span> '
@@ -82,5 +77,10 @@ def html_difference(edits: list[WordEdit], original_words: bool=False,
             html_text += f'<span class="{insert_class}">{hword}</span> '
         elif edit.edit == 'D':
             html_text += f'<span class="{delete_class}">{rword}</span> '
+        sentence_length += 1
+
+        if split_sentences and sentence_length > 0 and edit.refword != '' and edit.refword.strip()[-1] in ('!', '.', '?'):
+            html_text += edit.refword.strip()[-1] + "<p>"
+            sentence_length = 0
 
     return html_text
