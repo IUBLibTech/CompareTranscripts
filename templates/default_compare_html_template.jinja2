@@ -15,6 +15,13 @@
             .ralign {
                 text-align: right;
             }
+            table { border-collapse: collapse; }
+            tr { border: none; }
+            td {
+                border-right: solid 1px #000; 
+                border-left: solid 1px #000;
+            }
+
         </style>
         <title>{{ title }}</title>
     </head>
@@ -30,7 +37,7 @@
         <table>
             <thead>
                 <tr>
-                    <td></td>
+                    <th></th>
                 {% for h in hyp %}
                     <th>{{ h }}</th>
                 {% endfor %}
