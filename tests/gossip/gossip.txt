@@ -1,0 +1,2899 @@
+Comparison against gossip.vtt
+
+Comparison was run with these arguments: /data/work_projects/CompareTranscripts/bin/compare_transcripts ../tests/gossip/gossip.vtt ../tests/gossip/3play.json ../tests/gossip/gossip-large-v2.json ../tests/gossip/gossip-large-v3.json ../tests/gossip/gossip-turbo.json ../tests/gossip/gossip-medium.json ../tests/gossip/gossip-small.json --debug --output /home/bdwheele/gossip.txt --dropout-ratio 0.7 --mid-hallucination-length 3
+The original text has a total of 126 sentences.
+
+*** 3play.json ***
+
+Overall statistics
+WER: 0.00%
+MER: 0.00%
+WIL: 0.00%
+WIP: 100.00%
+
+Edit Statistics
+Hits: 1474
+Substitutions: 0
+Insertions: 0
+Deletions: 0
+
+Hallucinations
+Number of hallucinations: 0
+
+Dropouts
+Number of dropouts: 0
+
+Edits
+REF: Pretty clever bird, the parrot. He can actually talk, pronounce words. Of 
+HYP: Pretty clever bird, the parrot. He can actually talk, pronounce words. Of 
+CHG:                                                                           
+
+REF: course, he has no idea what the words mean, so we never take him seriously. 
+HYP: course, he has no idea what the words mean, so we never take him seriously. 
+CHG:                                                                             
+
+REF: Unfortunately, that's not true with gossips. They use words just as 
+HYP: Unfortunately, that's not true with gossips. They use words just as 
+CHG:                                                                     
+
+REF: carelessly as the parrot, but sometimes we take them seriously, and often 
+HYP: carelessly as the parrot, but sometimes we take them seriously, and often 
+CHG:                                                                           
+
+REF: innocent persons are harmed. You see, gossips don't stop to think that 
+HYP: innocent persons are harmed. You see, gossips don't stop to think that 
+CHG:                                                                        
+
+REF: words are dangerous. They influence our national life, and in war they are 
+HYP: words are dangerous. They influence our national life, and in war they are 
+CHG:                                                                            
+
+REF: powerful weapons. Gossips toss words around as carelessly as parrots, with 
+HYP: powerful weapons. Gossips toss words around as carelessly as parrots, with 
+CHG:                                                                            
+
+REF: no more sense of the harm they can do. Did I hear somebody say gossiping is 
+HYP: no more sense of the harm they can do. Did I hear somebody say gossiping is 
+CHG:                                                                             
+
+REF: monopolized by women? Far from it. Anyone who uses words carelessly, 
+HYP: monopolized by women? Far from it. Anyone who uses words carelessly, 
+CHG:                                                                      
+
+REF: especially to talk behind someone's back, is a gossip. Let me tell you a 
+HYP: especially to talk behind someone's back, is a gossip. Let me tell you a 
+CHG:                                                                          
+
+REF: little story about a gossip. This is Marian High, my school. I'm the 
+HYP: little story about a gossip. This is Marian High, my school. I'm the 
+CHG:                                                                      
+
+REF: principal, George Eastmoor. There were some people in my office this 
+HYP: principal, George Eastmoor. There were some people in my office this 
+CHG:                                                                      
+
+REF: particular morning, Mr. And Mrs. Gage and their daughter, Jean. They told 
+HYP: particular morning, Mr. And Mrs. Gage and their daughter, Jean. They told 
+CHG:                                                                           
+
+REF: me Jean would have to leave school. Why? Because of the malicious gossip 
+HYP: me Jean would have to leave school. Why? Because of the malicious gossip 
+CHG:                                                                          
+
+REF: about her. I was shocked, and I asked for details to see if we could do 
+HYP: about her. I was shocked, and I asked for details to see if we could do 
+CHG:                                                                         
+
+REF: something about it. We began talking, even though Jean thought it was 
+HYP: something about it. We began talking, even though Jean thought it was 
+CHG:                                                                       
+
+REF: already too late. Mr. And Mrs. Gage had opened a grocery store at the start 
+HYP: already too late. Mr. And Mrs. Gage had opened a grocery store at the start 
+CHG:                                                                             
+
+REF: of the term, and Jean helped out after school. Usually, it's difficult for 
+HYP: of the term, and Jean helped out after school. Usually, it's difficult for 
+CHG:                                                                            
+
+REF: a boy or girl entering a new school to get acquainted and make friends. But 
+HYP: a boy or girl entering a new school to get acquainted and make friends. But 
+CHG:                                                                             
+
+REF: in Jean's case, it was easy. She's a very good artist. Her first drawing 
+HYP: in Jean's case, it was easy. She's a very good artist. Her first drawing 
+CHG:                                                                          
+
+REF: won a school award, and the prize-winning picture was posted on the 
+HYP: won a school award, and the prize-winning picture was posted on the 
+CHG:                                                                     
+
+REF: bulletin board. That seemed to open the doors for her. All the girls were 
+HYP: bulletin board. That seemed to open the doors for her. All the girls were 
+CHG:                                                                           
+
+REF: interested and anxious to meet her. The first friend she made was Janice 
+HYP: interested and anxious to meet her. The first friend she made was Janice 
+CHG:                                                                          
+
+REF: Nelson. Course, Marian High is co-educational, and the other half of our 
+HYP: Nelson. Course, Marian High is co-educational, and the other half of our 
+CHG:                                                                          
+
+REF: student body is always interested in a pretty, popular new girl. So, while 
+HYP: student body is always interested in a pretty, popular new girl. So, while 
+CHG:                                                                            
+
+REF: Jean's new friend Janice Nelson was introducing her to some of the other 
+HYP: Jean's new friend Janice Nelson was introducing her to some of the other 
+CHG:                                                                          
+
+REF: girls, Jack Monroe and Bill Ellis, our two ranking casanovas, were making a 
+HYP: girls, Jack Monroe and Bill Ellis, our two ranking casanovas, were making a 
+CHG:                                                                             
+
+REF: little bet as to which would make the first date with her. Bill Ellis made 
+HYP: little bet as to which would make the first date with her. Bill Ellis made 
+CHG:                                                                            
+
+REF: the first move. He was waiting on the steps when Janice and Jean left 
+HYP: the first move. He was waiting on the steps when Janice and Jean left 
+CHG:                                                                       
+
+REF: school that afternoon, and soon was off to a running start in the 
+HYP: school that afternoon, and soon was off to a running start in the 
+CHG:                                                                   
+
+REF: competition. Jack wasn't called the best broken field runner in Marian 
+HYP: competition. Jack wasn't called the best broken field runner in Marian 
+CHG:                                                                        
+
+REF: history for nothing. Besides, he still had some trumps in his hand. Like an 
+HYP: history for nothing. Besides, he still had some trumps in his hand. Like an 
+CHG:                                                                             
+
+REF: open convertible, which had helped quite a few times in the past. Bill 
+HYP: open convertible, which had helped quite a few times in the past. Bill 
+CHG:                                                                        
+
+REF: didn't know it yet, but he was about to be outmaneuvered by an old trick-- 
+HYP: didn't know it yet, but he was about to be outmaneuvered by an old trick-- 
+CHG:                                                                            
+
+REF: the fake flat tire. Jack was well on the lead now. He drove twelve blocks 
+HYP: the fake flat tire. Jack was well on the lead now. He drove twelve blocks 
+CHG:                                                                           
+
+REF: out of his way to drop Janice off first. Then he took his time getting Jean 
+HYP: out of his way to drop Janice off first. Then he took his time getting Jean 
+CHG:                                                                             
+
+REF: back to the grocery store. Jean introduced Jack to her mother and father, 
+HYP: back to the grocery store. Jean introduced Jack to her mother and father, 
+CHG:                                                                           
+
+REF: and presto, he'd won. He had a date with Jean for Friday night. From the 
+HYP: and presto, he'd won. He had a date with Jean for Friday night. From the 
+CHG:                                                                          
+
+REF: time jack called for her and all during the afternoon and evening, Jean 
+HYP: time jack called for her and all during the afternoon and evening, Jean 
+CHG:                                                                         
+
+REF: kept thinking to herself how lucky she was that her father had moved his 
+HYP: kept thinking to herself how lucky she was that her father had moved his 
+CHG:                                                                          
+
+REF: store here so she could attend Marian. She was a brand new student and 
+HYP: store here so she could attend Marian. She was a brand new student and 
+CHG:                                                                        
+
+REF: already she'd won the art contest, made a whole circle of friends, had been 
+HYP: already she'd won the art contest, made a whole circle of friends, had been 
+CHG:                                                                             
+
+REF: asked to pledge the girls club. And now here she was out with the most 
+HYP: asked to pledge the girls club. And now here she was out with the most 
+CHG:                                                                        
+
+REF: popular boy in school. But when they drove home, Jean began to learn a 
+HYP: popular boy in school. But when they drove home, Jean began to learn a 
+CHG:                                                                        
+
+REF: little more about Jack. His popularity had gone to his head. He was 
+HYP: little more about Jack. His popularity had gone to his head. He was 
+CHG:                                                                     
+
+REF: completely sure of himself, confident that none of the girls could resist 
+HYP: completely sure of himself, confident that none of the girls could resist 
+CHG:                                                                           
+
+REF: him. Jean's slap didn't hurt his face, but it certainly injured his pride. 
+HYP: him. Jean's slap didn't hurt his face, but it certainly injured his pride. 
+CHG:                                                                            
+
+REF: He tried to laugh it off, but he was thinking that he'd have to get even. 
+HYP: He tried to laugh it off, but he was thinking that he'd have to get even. 
+CHG:                                                                           
+
+REF: Jack didn't lose any time giving the other boys a highly colored version of 
+HYP: Jack didn't lose any time giving the other boys a highly colored version of 
+CHG:                                                                             
+
+REF: the date. To regain his self-confidence and build himself up in their eyes, 
+HYP: the date. To regain his self-confidence and build himself up in their eyes, 
+CHG:                                                                             
+
+REF: he added a few details, remarks about Jean completely untrue. But then 
+HYP: he added a few details, remarks about Jean completely untrue. But then 
+CHG:                                                                        
+
+REF: gossip seldom worry about the truth. Now, the gossip began to spread. Bill 
+HYP: gossip seldom worry about the truth. Now, the gossip began to spread. Bill 
+CHG:                                                                            
+
+REF: Ellis colored it a little more and passed it on. Then Christine Manners 
+HYP: Ellis colored it a little more and passed it on. Then Christine Manners 
+CHG:                                                                         
+
+REF: took over. First, she used her lunch hour to tell the story to every girl 
+HYP: took over. First, she used her lunch hour to tell the story to every girl 
+CHG:                                                                           
+
+REF: who would listen, and that included practically every girl in the school. 
+HYP: who would listen, and that included practically every girl in the school. 
+CHG:                                                                           
+
+REF: When she got home, she took over the telephone to call all those she'd 
+HYP: When she got home, she took over the telephone to call all those she'd 
+CHG:                                                                        
+
+REF: missed. Yes, gossip spreads like wildfire, especially with the help of 
+HYP: missed. Yes, gossip spreads like wildfire, especially with the help of 
+CHG:                                                                        
+
+REF: girls like Christine. And by the end of the day, the harm was done, Jean's 
+HYP: girls like Christine. And by the end of the day, the harm was done, Jean's 
+CHG:                                                                            
+
+REF: reputation was ruined. The next morning, Christine still wasn't through. 
+HYP: reputation was ruined. The next morning, Christine still wasn't through. 
+CHG:                                                                          
+
+REF: She'd been jealous of the new girl's popularity and talent from the start. 
+HYP: She'd been jealous of the new girl's popularity and talent from the start. 
+CHG:                                                                            
+
+REF: Now was her chance. But the picture gave Jean her first inkling that 
+HYP: Now was her chance. But the picture gave Jean her first inkling that 
+CHG:                                                                      
+
+REF: something was wrong. She knew it had been torn down deliberately. She asked 
+HYP: something was wrong. She knew it had been torn down deliberately. She asked 
+CHG:                                                                             
+
+REF: her friend Janice if she'd done something wrong, but Janice was too 
+HYP: her friend Janice if she'd done something wrong, but Janice was too 
+CHG:                                                                     
+
+REF: uncomfortable, embarrassed to tell Jean to her face. Everyone took pains to 
+HYP: uncomfortable, embarrassed to tell Jean to her face. Everyone took pains to 
+CHG:                                                                             
+
+REF: ignore her. She felt like an outcast, yet couldn't imagine why. Jean was 
+HYP: ignore her. She felt like an outcast, yet couldn't imagine why. Jean was 
+CHG:                                                                          
+
+REF: hurt and bewildered. Marian High had seemed so wonderful only last week. 
+HYP: hurt and bewildered. Marian High had seemed so wonderful only last week. 
+CHG:                                                                          
+
+REF: Now it was like a completely different school-- gossip. Jean was lonely and 
+HYP: Now it was like a completely different school-- gossip. Jean was lonely and 
+CHG:                                                                             
+
+REF: miserable all week, but she was still hopeful that once she was initiated 
+HYP: miserable all week, but she was still hopeful that once she was initiated 
+CHG:                                                                           
+
+REF: into the girls club, things would be better. However, Jean had already been 
+HYP: into the girls club, things would be better. However, Jean had already been 
+CHG:                                                                             
+
+REF: blackballed even before the club's scavenger hunt had started. But instead 
+HYP: blackballed even before the club's scavenger hunt had started. But instead 
+CHG:                                                                            
+
+REF: of telling her, the club president had made Jean's assignments far more 
+HYP: of telling her, the club president had made Jean's assignments far more 
+CHG:                                                                         
+
+REF: difficult than the other girls, hoping Jean would fail, thus disqualifying 
+HYP: difficult than the other girls, hoping Jean would fail, thus disqualifying 
+CHG:                                                                            
+
+REF: herself. Not knowing, this Jean started out in the scavenger hunt as 
+HYP: herself. Not knowing, this Jean started out in the scavenger hunt as 
+CHG:                                                                      
+
+REF: eagerly as any of the others. She was willing to work twice as hard as the 
+HYP: eagerly as any of the others. She was willing to work twice as hard as the 
+CHG:                                                                            
+
+REF: other pledges to be initiated. The rest of the pledges had finished their 
+HYP: other pledges to be initiated. The rest of the pledges had finished their 
+CHG:                                                                           
+
+REF: assignments and had been notified of their acceptance before Jean returned. 
+HYP: assignments and had been notified of their acceptance before Jean returned. 
+CHG:                                                                             
+
+REF: Now, the girls were really embarrassed. Jean came back with every one of 
+HYP: Now, the girls were really embarrassed. Jean came back with every one of 
+CHG:                                                                          
+
+REF: her assignments completed. What could she do next? Nothing, Christine told 
+HYP: her assignments completed. What could she do next? Nothing, Christine told 
+CHG:                                                                            
+
+REF: her, she'd been blackballed. She wasn't wanted. Jean couldn't understand. 
+HYP: her, she'd been blackballed. She wasn't wanted. Jean couldn't understand. 
+CHG:                                                                           
+
+REF: She'd done her assignments as well as any of them. Why had she been 
+HYP: She'd done her assignments as well as any of them. Why had she been 
+CHG:                                                                     
+
+REF: rejected? Christine said Jean knew very well why. Because they didn't want 
+HYP: rejected? Christine said Jean knew very well why. Because they didn't want 
+CHG:                                                                            
+
+REF: her kind of girl in their club. Jean still didn't understand. Janice 
+HYP: her kind of girl in their club. Jean still didn't understand. Janice 
+CHG:                                                                      
+
+REF: finally had to explain that they all knew about her, about Jack's story. 
+HYP: finally had to explain that they all knew about her, about Jack's story. 
+CHG:                                                                          
+
+REF: Jean was stunned. How could anybody believe that about her? When Mr. And 
+HYP: Jean was stunned. How could anybody believe that about her? When Mr. And 
+CHG:                                                                          
+
+REF: Mrs. Gage came home, Jean told them what had happened, that she hadn't been 
+HYP: Mrs. Gage came home, Jean told them what had happened, that she hadn't been 
+CHG:                                                                             
+
+REF: accepted by the club because of the gossip about her. She said she was 
+HYP: accepted by the club because of the gossip about her. She said she was 
+CHG:                                                                        
+
+REF: quitting school. So that's the story she told me. That's why the Gages came 
+HYP: quitting school. So that's the story she told me. That's why the Gages came 
+CHG:                                                                             
+
+REF: to see me. They agreed with Jean. It would be better if she left school. 
+HYP: to see me. They agreed with Jean. It would be better if she left school. 
+CHG:                                                                          
+
+REF: But I asked them to wait, give me a chance to do what I could. Gossip is 
+HYP: But I asked them to wait, give me a chance to do what I could. Gossip is 
+CHG:                                                                          
+
+REF: difficult to fight. You have to go right to the source and stamp it out. 
+HYP: difficult to fight. You have to go right to the source and stamp it out. 
+CHG:                                                                          
+
+REF: That's exactly what I did. I called in Jack Monroe, asked him point blank 
+HYP: That's exactly what I did. I called in Jack Monroe, asked him point blank 
+CHG:                                                                           
+
+REF: if he was the gossip. Jack was surprised. He thought only women gossip. Men 
+HYP: if he was the gossip. Jack was surprised. He thought only women gossip. Men 
+CHG:                                                                             
+
+REF: just, well-- realize the harm it would do. When I had finished explaining 
+HYP: just, well-- realize the harm it would do. When I had finished explaining 
+CHG:                                                                           
+
+REF: what his loose talk had done to Jean, Jack asked me what he could do, and I 
+HYP: what his loose talk had done to Jean, Jack asked me what he could do, and I 
+CHG:                                                                             
+
+REF: told him a way, the only way. He thought it over. It wasn't going to be 
+HYP: told him a way, the only way. He thought it over. It wasn't going to be 
+CHG:                                                                         
+
+REF: easy. It would be embarrassing, and we both knew it, but he finally agreed. 
+HYP: easy. It would be embarrassing, and we both knew it, but he finally agreed. 
+CHG:                                                                             
+
+REF: Give Jack credit. He went through with it. His voice broke a few times, but 
+HYP: Give Jack credit. He went through with it. His voice broke a few times, but 
+CHG:                                                                             
+
+REF: he managed to tell them all that there was nothing to the gossip, that he 
+HYP: he managed to tell them all that there was nothing to the gossip, that he 
+CHG:                                                                           
+
+REF: had made up the story, and was to blame for everything. But that wasn't 
+HYP: had made up the story, and was to blame for everything. But that wasn't 
+CHG:                                                                         
+
+REF: quite right. I told them that anyone who listens to gossip is almost as 
+HYP: quite right. I told them that anyone who listens to gossip is almost as 
+CHG:                                                                         
+
+REF: much to blame as the person who spreads it. We were going to discuss the 
+HYP: much to blame as the person who spreads it. We were going to discuss the 
+CHG:                                                                          
+
+REF: problem in assembly, make the whole school aware of the danger, and make 
+HYP: problem in assembly, make the whole school aware of the danger, and make 
+CHG:                                                                          
+
+REF: sure that no Marian student would ever again be hurt the way Jean was. The 
+HYP: sure that no Marian student would ever again be hurt the way Jean was. The 
+CHG:                                                                            
+
+REF: next day, the whole student body realized what they had done to Jean. Now 
+HYP: next day, the whole student body realized what they had done to Jean. Now 
+CHG:                                                                           
+
+REF: they wanted to make it up to her. She made a fresh start, and was soon one 
+HYP: they wanted to make it up to her. She made a fresh start, and was soon one 
+CHG:                                                                            
+
+REF: of Marian's most popular girls, one of our real leaders. What could have 
+HYP: of Marian's most popular girls, one of our real leaders. What could have 
+CHG:                                                                          
+
+REF: been another gossip tragedy had been a happy ending. But don't forget this, 
+HYP: been another gossip tragedy had been a happy ending. But don't forget this, 
+CHG:                                                                             
+
+REF: there needn't have been so much as a near tragedy if our students, instead 
+HYP: there needn't have been so much as a near tragedy if our students, instead 
+CHG:                                                                            
+
+REF: of imitating this bird, the gossipy parrot, had instead copied three far 
+HYP: of imitating this bird, the gossipy parrot, had instead copied three far 
+CHG:                                                                          
+
+REF: wiser creatures, the three little monkeys, who see no evil, hear no evil, 
+HYP: wiser creatures, the three little monkeys, who see no evil, hear no evil, 
+CHG:                                                                           
+
+REF: and speak no evil. 
+HYP: and speak no evil. 
+CHG:                    
+
+
+*** gossip-large-v2.json ***
+
+Overall statistics
+WER: 1.36%
+MER: 1.36%
+WIL: 2.43%
+WIP: 97.57%
+
+Edit Statistics
+Hits: 1456
+Substitutions: 16
+Insertions: 2
+Deletions: 2
+
+Hallucinations
+Number of hallucinations: 0
+
+Dropouts
+Number of dropouts: 0
+
+Edits
+REF: Pretty clever bird, the parrot. He can actually talk, pronounce words. Of 
+HYP: Pretty clever bird, the parrot. He can actually talk, pronounce words. Of 
+CHG:                                                                           
+
+REF: course, he has no idea what the words mean, so we never take him  
+HYP: course, he has no idea what the words mean, so we never take them 
+CHG:                                                              SSSS 
+
+REF: seriously. Unfortunately, that's not true with gossips. They use words just 
+HYP: seriously. Unfortunately, that's not true with gossips. They use words just 
+CHG:                                                                             
+
+REF: as carelessly as the parrot, but sometimes we take them seriously, and 
+HYP: as carelessly as the parrot, but sometimes we take them seriously, and 
+CHG:                                                                        
+
+REF: often innocent persons are harmed. You see, gossips don't stop to think 
+HYP: often innocent persons are harmed. You see, gossips don't stop to think 
+CHG:                                                                         
+
+REF: that words are dangerous. They influence our national life, and in war  
+HYP: that words are dangerous. They influence our national life, and in war, 
+CHG:                                                                         
+
+REF: they are powerful weapons. Gossips toss words around as carelessly as 
+HYP: they are powerful weapons. Gossips toss words around as carelessly as 
+CHG:                                                                       
+
+REF: parrots, with no more sense of the harm they can do. Did I hear somebody 
+HYP: parrots, with no more sense of the harm they can do. Did I hear somebody 
+CHG:                                                                          
+
+REF: say gossiping is monopolized by women? Far from it. Anyone who uses words 
+HYP: say gossiping is monopolized by women? Far from it. Anyone who uses words 
+CHG:                                                                           
+
+REF: carelessly, especially to talk behind someone's back, is a gossip. Let me 
+HYP: carelessly, especially to talk behind someone's back, is a gossip. Let me 
+CHG:                                                                           
+
+REF: tell you a little story about a gossip. This is Marian High, my school. I'm 
+HYP: tell you a little story about a gossip. This is Marion High, my school. I'm 
+CHG:                                                 SSSSSS                      
+
+REF: the principal, George Eastmoor. There were some people in my office this 
+HYP: the principal, George Eastmore. There were some people in my office this 
+CHG:                       SSSSSSSSS                                          
+
+REF: particular morning, Mr. And Mrs. Gage  and their daughter, Jean. They told 
+HYP: particular morning, Mr. and Mrs. Gage, and their daughter, Jean. They told 
+CHG:                                                                            
+
+REF: me Jean would have to leave school. Why? Because of the malicious gossip 
+HYP: me Jean would have to leave school. Why? Because of the malicious gossip 
+CHG:                                                                          
+
+REF: about her. I was shocked, and I asked for details to see if we could do 
+HYP: about her. I was shocked, and I asked for details to see if we could do 
+CHG:                                                                         
+
+REF: something about it. We began talking, even though Jean thought it was 
+HYP: something about it. We began talking, even though Jean thought it was 
+CHG:                                                                       
+
+REF: already too late. Mr. And Mrs. Gage had opened a grocery store at the start 
+HYP: already too late. Mr. and Mrs. Gage had opened a grocery store at the start 
+CHG:                                                                             
+
+REF: of the term, and Jean helped out after school. Usually, it's difficult for 
+HYP: of the term, and Jean helped out after school. Usually  it's difficult for 
+CHG:                                                                            
+
+REF: a boy or girl entering a new school to get acquainted and make friends. But 
+HYP: a boy or girl entering a new school to get acquainted and make friends, but 
+CHG:                                                                             
+
+REF: in Jean's case, it was easy. She's a very good artist. Her first drawing 
+HYP: in Jean's case  it was easy. She's a very good artist. Her first drawing 
+CHG:                                                                          
+
+REF: won a school award, and the prize-winning picture was posted on the 
+HYP: won a school award, and the prize-winning picture was posted on the 
+CHG:                                                                     
+
+REF: bulletin board. That seemed to open the doors for her. All the girls were 
+HYP: bulletin board. That seemed to open the doors for her. All the girls were 
+CHG:                                                                           
+
+REF: interested and anxious to meet her. The first friend she made was Janice 
+HYP: interested and anxious to meet her. The first friend she made was Janice 
+CHG:                                                                          
+
+REF: Nelson. ** Course, Marian High is co-educational, and the other half of our 
+HYP: Nelson. Of course, Marion High is coeducational,  and the other half of our 
+CHG:         II         SSSSSS         SSSSSSSSSSSSSSS                           
+
+REF: student body is always interested in a pretty, popular new girl. So, while 
+HYP: student body is always interested in a pretty, popular new girl. So  while 
+CHG:                                                                            
+
+REF: Jean's new friend Janice Nelson was introducing her to some of the other 
+HYP: Jean's new friend Janice Nelson was introducing her to some of the other 
+CHG:                                                                          
+
+REF: girls, Jack Monroe and Bill Ellis, our two ranking casanovas, were making a 
+HYP: girls, Jack Monroe and Bill Ellis, our two ranking Casanovas, were making a 
+CHG:                                                                             
+
+REF: little bet as to which would make the first date with her. Bill Ellis made 
+HYP: little bet as to which would make the first date with her. Bill Ellis made 
+CHG:                                                                            
+
+REF: the first move. He was waiting on the steps when Janice and Jean left 
+HYP: the first move. He was waiting on the steps when Janice and Jean left 
+CHG:                                                                       
+
+REF: school that afternoon, and soon was off to a running start in the 
+HYP: school that afternoon, and soon was off to a running start in the 
+CHG:                                                                   
+
+REF: competition. Jack wasn't called the best broken field runner in Marian 
+HYP: competition. Jack wasn't called the best broken field runner in Marion 
+CHG:                                                                 SSSSSS 
+
+REF: history for nothing. Besides, he still had some trumps in his hand. Like an 
+HYP: history for nothing. Besides, he still had some trumps in his hand, like an 
+CHG:                                                                             
+
+REF: open convertible, which had helped quite a few times in the past. Bill 
+HYP: open convertible, which had helped quite a few times in the past. Bill 
+CHG:                                                                        
+
+REF: didn't know it yet, but he was about to be outmaneuvered by an old trick-- 
+HYP: didn't know it yet, but he was about to be outmaneuvered by an old trick,  
+CHG:                                                                            
+
+REF: the fake flat tire. Jack was well on the lead now. He drove twelve blocks 
+HYP: the fake flat tire. Jack was well in the lead now. He drove twelve blocks 
+CHG:                                   SS                                      
+
+REF: out of his way to drop Janice off first. Then he took his time getting Jean 
+HYP: out of his way to drop Janice off first. Then he took his time getting Jean 
+CHG:                                                                             
+
+REF: back to the grocery store. Jean introduced Jack to her mother and father, 
+HYP: back to the grocery store. Jean introduced Jack to her mother and father, 
+CHG:                                                                           
+
+REF: and presto, he'd won. He had a date with Jean for Friday night. From the 
+HYP: and presto, he'd won. He had a date with Jean *** Friday night. From the 
+CHG:                                               DDD                        
+
+REF: time jack called for her  and all during the afternoon and evening, Jean 
+HYP: time Jack called for her, and all during the afternoon and evening, Jean 
+CHG:                                                                          
+
+REF: kept thinking to herself how lucky she was that her father had moved his 
+HYP: kept thinking to herself how lucky she was that her father had moved his 
+CHG:                                                                          
+
+REF: store here so she could attend Marian. She was a brand new student  and 
+HYP: store here so she could attend Marion. She was a brand new student, and 
+CHG:                                SSSSSSS                                  
+
+REF: already she'd won the art contest, made a whole circle of friends, had been 
+HYP: already she'd won the art contest, made a whole circle of friends, had been 
+CHG:                                                                             
+
+REF: asked to pledge the girls  club. And now here she was out with the most 
+HYP: asked to pledge the girls' club, and now here she was out with the most 
+CHG:                                                                         
+
+REF: popular boy in school. But when they drove home, Jean began to learn a 
+HYP: popular boy in school. But when they drove home, Jean began to learn a 
+CHG:                                                                        
+
+REF: little more about Jack. His popularity had gone to his head. He was 
+HYP: little more about Jack. His popularity had gone to his head. He was 
+CHG:                                                                     
+
+REF: completely sure of himself, confident that none of the girls could resist 
+HYP: completely sure of himself, confident that none of the girls could resist 
+CHG:                                                                           
+
+REF: him. Jean's slap didn't hurt his face, but it certainly injured his pride. 
+HYP: him. Jean's slap didn't hurt his face, but it certainly injured his pride. 
+CHG:                                                                            
+
+REF: He tried to laugh it off, but he was thinking that he'd have to get even. 
+HYP: He tried to laugh it off, but he was thinking that he'd have to get even. 
+CHG:                                                                           
+
+REF: Jack didn't lose any time giving the other boys a highly colored version of 
+HYP: Jack didn't lose any time giving the other boys a highly colored version of 
+CHG:                                                                             
+
+REF: the date. To regain his self-confidence and build himself up in their eyes, 
+HYP: the date. To regain his self-confidence and build himself up in their eyes, 
+CHG:                                                                             
+
+REF: he added a few details, remarks about Jean completely untrue. But then 
+HYP: he added a few details, remarks about Jean completely untrue, but then 
+CHG:                                                                        
+
+REF: gossip seldom worry about the truth. Now, the gossip began to spread. Bill 
+HYP: gossip seldom worry about the truth. Now  the gossip began to spread. Bill 
+CHG:                                                                            
+
+REF: Ellis colored it a little more and passed it on. Then Christine Manners 
+HYP: Ellis colored it a little more and passed it on. Then Christine Manners 
+CHG:                                                                         
+
+REF: took over. First, she used her lunch hour to tell the story to every girl 
+HYP: took over. First, she used her lunch hour to tell the story to every girl 
+CHG:                                                                           
+
+REF: who would listen, and that included practically every girl in the school. 
+HYP: who would listen, and that included practically every girl in the school. 
+CHG:                                                                           
+
+REF: When she got home, she took over the telephone to call all those she'd 
+HYP: When she got home, she took over the telephone to call all those she'd 
+CHG:                                                                        
+
+REF: missed. Yes, gossip spreads like wildfire, especially with the help of 
+HYP: missed. Yes, gossip spreads like wildfire, especially with the help of 
+CHG:                                                                        
+
+REF: girls like Christine. And by the end of the day, the harm was done, Jean's 
+HYP: girls like Christine. And by the end of the day, the harm was done. Jean's 
+CHG:                                                                            
+
+REF: reputation was ruined. The next morning, Christine still wasn't through. 
+HYP: reputation was ruined. The next morning, Christine still wasn't through. 
+CHG:                                                                          
+
+REF: She'd been jealous of the new girl's popularity and talent from the start. 
+HYP: She'd been jealous of the new girl's popularity and talent from the start. 
+CHG:                                                                            
+
+REF: Now was her chance. But the picture gave Jean her first inkling that 
+HYP: Now was her chance. But the picture gave Jean her first inkling that 
+CHG:                                                                      
+
+REF: something was wrong. She knew it had been torn down deliberately. She asked 
+HYP: something was wrong. She knew it had been torn down deliberately. She asked 
+CHG:                                                                             
+
+REF: her friend Janice if she'd done something wrong, but Janice was too 
+HYP: her friend Janice if she'd done something wrong, but Janice was too 
+CHG:                                                                     
+
+REF: uncomfortable, embarrassed to tell Jean to her face. Everyone took pains to 
+HYP: uncomfortable, embarrassed to tell Jean to her face. Everyone took pains to 
+CHG:                                                                             
+
+REF: ignore her. She felt like an outcast, yet couldn't imagine why. Jean was 
+HYP: ignore her. She felt like an outcast, yet couldn't imagine why. Jean was 
+CHG:                                                                          
+
+REF: hurt and bewildered. Marian High had seemed so wonderful only last week. 
+HYP: hurt and bewildered. Marion High had seemed so wonderful only last week. 
+CHG:                      SSSSSS                                              
+
+REF: Now it was like a completely different school-- gossip. Jean was lonely and 
+HYP: Now it was like a completely different school.  Gossip. Jean was lonely and 
+CHG:                                                                             
+
+REF: miserable all week, but she was still hopeful that once she was initiated 
+HYP: miserable all week, but she was still hopeful that once she was initiated 
+CHG:                                                                           
+
+REF: into the girls  club, things would be better. However, Jean had already 
+HYP: into the girls' club, things would be better. However, Jean had already 
+CHG:                                                                         
+
+REF: been blackballed even before the club's scavenger hunt had started. But 
+HYP: been blackballed even before the club   scavenger hunt had started. But 
+CHG:                                  SSSSSS                                 
+
+REF: instead of telling her, the club president had made Jean's assignments far 
+HYP: instead of telling her, the club president had made Jean's assignments far 
+CHG:                                                                            
+
+REF: more difficult than the other girls, hoping Jean would fail, thus 
+HYP: more difficult than the other girls, hoping Jean would fail, thus 
+CHG:                                                                   
+
+REF: disqualifying herself. Not knowing, this  Jean started out in the scavenger 
+HYP: disqualifying herself. Not knowing  this, Jean started out on the scavenger 
+CHG:                                                            SS               
+
+REF: hunt as eagerly as any of the others. She was willing to work twice as hard 
+HYP: hunt as eagerly as any of the others. She was willing to work twice as hard 
+CHG:                                                                             
+
+REF: as the other pledges to be initiated. The rest of the pledges had finished 
+HYP: as the other pledges to be initiated. The rest of the pledges had finished 
+CHG:                                                                            
+
+REF: their assignments and had been notified of their acceptance before Jean 
+HYP: their assignments and had been notified of their acceptance before Jean 
+CHG:                                                                         
+
+REF: returned. Now, the girls were really embarrassed. Jean came back with every 
+HYP: returned. Now  the girls were really embarrassed. Jean came back with every 
+CHG:                                                                             
+
+REF: one of her assignments completed. What could she do next? Nothing, 
+HYP: one of her assignments completed. What could she do next? Nothing, 
+CHG:                                                                    
+
+REF: Christine told her, she'd been blackballed. She wasn't wanted. Jean 
+HYP: Christine told her. She'd been blackballed. She wasn't wanted. Jean 
+CHG:                                                                     
+
+REF: couldn't understand. She'd done her assignments as well as any of them. Why 
+HYP: couldn't understand. She'd done her assignments as well as any of them. Why 
+CHG:                                                                             
+
+REF: had she been rejected? Christine said Jean knew very well why. Because they 
+HYP: had she been rejected? Christine said Jean knew very well why, because they 
+CHG:                                                                             
+
+REF: didn't want her kind of girl in their club. Jean still didn't understand. 
+HYP: didn't want her kind of girl in their club. Jean still didn't understand. 
+CHG:                                                                           
+
+REF: Janice finally had to explain that they all knew about her, about Jack's 
+HYP: Janice finally had to explain that they all knew about her, about Jack's 
+CHG:                                                                          
+
+REF: story. Jean was stunned. How could anybody believe that  about her? When 
+HYP: story. Jean was stunned. How could anybody believe that, about her? When 
+CHG:                                                                          
+
+REF: Mr. And Mrs. Gage came home, Jean told them what had happened, that she 
+HYP: Mr. and Mrs. Gage came home, Jean told them what had happened, that she 
+CHG:                                                                         
+
+REF: hadn't been accepted by the club because of the gossip about her. She said 
+HYP: hadn't been accepted by the club because of the gossip about her. She said 
+CHG:                                                                            
+
+REF: she was quitting school. So that's the story she told me. That's why the 
+HYP: she was quitting school. So that's the story she told me. That's why the 
+CHG:                                                                          
+
+REF: Gages came to see me. They agreed with Jean. It would be better if she left 
+HYP: Gages came to see me. They agreed with Jean. It would be better if she left 
+CHG:                                                                             
+
+REF: school. But I asked them to wait, give me a chance to do what I could. 
+HYP: school. But I asked them to wait. Give me a chance to do what I could. 
+CHG:                                                                        
+
+REF: Gossip is difficult to fight. You have to go right to the source and stamp 
+HYP: Gossip is difficult to fight. You have to go right to the source and stamp 
+CHG:                                                                            
+
+REF: it out. That's exactly what I did. I called in Jack Monroe, asked him point 
+HYP: it out. That's exactly what I did. I called in Jack Monroe, asked him point 
+CHG:                                                                             
+
+REF: blank if he was the gossip. Jack was surprised. He thought only women 
+HYP: blank if he was the gossip. Jack was surprised. He thought only women 
+CHG:                                                                       
+
+REF: gossip. Men just, well-- ***** realize  the harm it would do. When I had 
+HYP: gossip. Men just, well,  never realized the harm it would do. When I had 
+CHG:                          IIIII SSSSSSSS                                  
+
+REF: finished explaining what his loose talk had done to Jean, Jack asked me 
+HYP: finished explaining what his loose talk had done to Jean, Jack asked me 
+CHG:                                                                         
+
+REF: what he could do, and I told him a     way, the only way. He thought it 
+HYP: what he could do. And I told him away, **** the only way. He thought it 
+CHG:                                  SSSSS DDDD                             
+
+REF: over. It wasn't going to be easy. It would be embarrassing, and we both 
+HYP: over. It wasn't going to be easy. It would be embarrassing, and we both 
+CHG:                                                                         
+
+REF: knew it, but he finally agreed. Give Jack credit. He went through with it. 
+HYP: knew it. But he finally agreed. Give Jack credit. He went through with it. 
+CHG:                                                                            
+
+REF: His voice broke a few times, but he managed to tell them all that there was 
+HYP: His voice broke a few times, but he managed to tell them all that there was 
+CHG:                                                                             
+
+REF: nothing to the gossip, that he had made up the story, and was to blame for 
+HYP: nothing to the gossip, that he had made up the story  and was to blame for 
+CHG:                                                                            
+
+REF: everything. But that wasn't quite right. I told them that anyone who 
+HYP: everything. But that wasn't quite right. I told them that anyone who 
+CHG:                                                                      
+
+REF: listens to gossip is almost as much to blame as the person who spreads it. 
+HYP: listens to gossip is almost as much to blame as the person who spreads it. 
+CHG:                                                                            
+
+REF: We were going to discuss the problem in assembly, make the whole school 
+HYP: We were going to discuss the problem in assembly, make the whole school 
+CHG:                                                                         
+
+REF: aware of the danger, and make sure that no Marian student would ever again 
+HYP: aware of the danger  and make sure that no Marion student would ever again 
+CHG:                                            SSSSSS                          
+
+REF: be hurt the way Jean was. The next day, the whole student body realized 
+HYP: be hurt the way Jean was. The next day, the whole student body realized 
+CHG:                                                                         
+
+REF: what they had done to Jean. Now they wanted to make it up to her. She made 
+HYP: what they had done to Jean. Now they wanted to make it up to her. She made 
+CHG:                                                                            
+
+REF: a fresh start, and was soon one of Marian's most popular girls, one of our 
+HYP: a fresh start  and was soon one of Marion's most popular girls, one of our 
+CHG:                                    SSSSSSSS                                
+
+REF: real leaders. What could have been another gossip tragedy had been a happy 
+HYP: real leaders. What could have been another gossip tragedy had been a happy 
+CHG:                                                                            
+
+REF: ending. But don't forget this, there needn't have been so much as a near 
+HYP: ending. But don't forget this. There needn't have been so much as a near 
+CHG:                                                                          
+
+REF: tragedy if our students, instead of imitating this bird, the gossipy 
+HYP: tragedy of our students  instead of imitating this bird. The gossipy 
+CHG:         SS                                                           
+
+REF: parrot, had instead copied three far wiser creatures, the three little 
+HYP: parrot  had instead copied three far wiser creatures, the three little 
+CHG:                                                                        
+
+REF: monkeys, who see no evil, hear no evil, and speak no evil. 
+HYP: monkeys  who see no evil, hear no evil  and speak no evil. 
+CHG:                                                            
+
+
+*** gossip-large-v3.json ***
+
+Overall statistics
+WER: 32.56%
+MER: 31.79%
+WIL: 34.45%
+WIP: 65.55%
+
+Edit Statistics
+Hits: 1030
+Substitutions: 32
+Insertions: 36
+Deletions: 412
+
+Hallucinations
+Number of hallucinations: 3
+* girl's popularity and talent
+* She said she was quitting school. She said she wanted to go back to school. She said she
+* no evil, and speak no evil. They
+
+Dropouts
+Number of dropouts: 4
+* Pretty clever bird, the parrot. He can actually talk, pronounce words. Of course, he has no idea what the words mean, so we never take him seriously. Unfortunately, that's not true with gossips. They use words just as carelessly as the parrot, but sometimes we take them seriously, and often innocent persons are harmed.
+* see, gossips don't stop to think that words are dangerous. They influence our national life, and in war they are powerful weapons. Gossips toss words around as carelessly as parrots, with no more sense of the harm they can do. Did I hear somebody say gossiping is monopolized by women? Far from it. Anyone who uses words carelessly, especially to talk behind someone's back, is a gossip. Let me tell you a little story about a gossip. This is Marian High, my school. I'm the principal, George Eastmoor. There were some people in my office this particular morning, Mr. And Mrs. Gage and their daughter, Jean. They told me Jean would have to leave school. Why? Because of the malicious gossip about her. I was shocked, and I asked
+* details to see if we could do something about it. We began talking, even though Jean thought it was already too late. Mr. And Mrs. Gage had opened a grocery store at the start of the term, and Jean helped out after school. Usually, it's difficult for a boy or girl entering a new school to get acquainted and make friends. But in Jean's case, it was easy. She's a very good artist. Her first drawing won a school award, and the prize-winning picture was posted on the bulletin board. That seemed to open the doors for her. All the girls were interested and anxious to meet her. The first friend she made was Janice Nelson. Course, Marian High is co-educational, and the other half of our student body is always interested in a pretty, popular new girl. So, while Jean's new friend Janice Nelson was introducing her to some of the other girls, Jack Monroe and
+* Ellis, our two ranking casanovas, were making a little bet as to which would make the first date with her. Bill Ellis made the first move. He was waiting on the steps when Janice and Jean left school that afternoon, and soon was off to a running start in the competition. Jack wasn't called the best broken field runner in Marian history for nothing. Besides, he still had some trumps in his hand. Like an open convertible, which had helped quite a few times in the past. Bill
+
+Edits
+REF: Pretty clever bird, the parrot. He can actually talk, pronounce words. Of 
+HYP: Thank  ****** ***** *** ******* ** *** ******** ***** ********* ****** ** 
+CHG: SSSSSS DDDDDD DDDDD DDD DDDDDDD DD DDD DDDDDDDD DDDDD DDDDDDDDD DDDDDD DD 
+
+REF: course, he has no idea what the words mean, so we never take him seriously. 
+HYP: ******* ** *** ** **** **** *** ***** ***** ** ** ***** **** *** ********** 
+CHG: DDDDDDD DD DDD DD DDDD DDDD DDD DDDDD DDDDD DD DD DDDDD DDDD DDD DDDDDDDDDD 
+
+REF: Unfortunately, that's not true with gossips. They use words just as 
+HYP: ************** ****** *** **** **** ******** **** *** ***** **** ** 
+CHG: DDDDDDDDDDDDDD DDDDDD DDD DDDD DDDD DDDDDDDD DDDD DDD DDDDD DDDD DD 
+
+REF: carelessly as the parrot, but sometimes we take them seriously, and often 
+HYP: ********** ** *** ******* *** ********* ** **** **** ********** *** ***** 
+CHG: DDDDDDDDDD DD DDD DDDDDDD DDD DDDDDDDDD DD DDDD DDDD DDDDDDDDDD DDD DDDDD 
+
+REF: innocent persons are harmed. You see, gossips don't stop to think that 
+HYP: ******** ******* *** ******* you **** ******* ***** **** ** ***** **** 
+CHG: DDDDDDDD DDDDDDD DDD DDDDDDD     DDDD DDDDDDD DDDDD DDDD DD DDDDD DDDD 
+
+REF: words are dangerous. They influence our national life, and in war they are 
+HYP: ***** *** ********** **** ********* *** ******** ***** *** ** *** **** *** 
+CHG: DDDDD DDD DDDDDDDDDD DDDD DDDDDDDDD DDD DDDDDDDD DDDDD DDD DD DDD DDDD DDD 
+
+REF: powerful weapons. Gossips toss words around as carelessly as parrots, with 
+HYP: ******** ******** ******* **** ***** ****** ** ********** ** ******** **** 
+CHG: DDDDDDDD DDDDDDDD DDDDDDD DDDD DDDDD DDDDDD DD DDDDDDDDDD DD DDDDDDDD DDDD 
+
+REF: no more sense of the harm they can do. Did I hear somebody say gossiping is 
+HYP: ** **** ***** ** *** **** **** *** *** *** * **** ******** *** ********* ** 
+CHG: DD DDDD DDDDD DD DDD DDDD DDDD DDD DDD DDD D DDDD DDDDDDDD DDD DDDDDDDDD DD 
+
+REF: monopolized by women? Far from it. Anyone who uses words carelessly, 
+HYP: *********** ** ****** *** **** *** ****** *** **** ***** *********** 
+CHG: DDDDDDDDDDD DD DDDDDD DDD DDDD DDD DDDDDD DDD DDDD DDDDD DDDDDDDDDDD 
+
+REF: especially to talk behind someone's back, is a gossip. Let me tell you a 
+HYP: ********** ** **** ****** ********* ***** ** * ******* *** ** **** *** * 
+CHG: DDDDDDDDDD DD DDDD DDDDDD DDDDDDDDD DDDDD DD D DDDDDDD DDD DD DDDD DDD D 
+
+REF: little story about a gossip. This is Marian High, my school. I'm the 
+HYP: ****** ***** ***** * ******* **** ** ****** ***** ** ******* *** *** 
+CHG: DDDDDD DDDDD DDDDD D DDDDDDD DDDD DD DDDDDD DDDDD DD DDDDDDD DDD DDD 
+
+REF: principal, George Eastmoor. There were some people in my office this 
+HYP: ********** ****** ********* ***** **** **** ****** ** ** ****** **** 
+CHG: DDDDDDDDDD DDDDDD DDDDDDDDD DDDDD DDDD DDDD DDDDDD DD DD DDDDDD DDDD 
+
+REF: particular morning, Mr. And Mrs. Gage and their daughter, Jean. They told 
+HYP: ********** ******** *** *** **** **** *** ***** ********* ***** **** **** 
+CHG: DDDDDDDDDD DDDDDDDD DDD DDD DDDD DDDD DDD DDDDD DDDDDDDDD DDDDD DDDD DDDD 
+
+REF: me Jean would have to leave school. Why? Because of the malicious gossip 
+HYP: ** **** ***** **** ** ***** ******* **** ******* ** *** ********* ****** 
+CHG: DD DDDD DDDDD DDDD DD DDDDD DDDDDDD DDDD DDDDDDD DD DDD DDDDDDDDD DDDDDD 
+
+REF: about her. I was shocked, and I asked for details   to see      if we   
+HYP: ***** **** * *** ******** *** * ***** for watching. ©  BF-WATCH TV 2021 
+CHG: DDDDD DDDD D DDD DDDDDDDD DDD D DDDDD     SSSSSSSSS SS SSSSSSSS SS SSSS 
+
+REF: could do       something about it. We       began talking, even though   
+HYP: ©     BF-WATCH TV        2021  ©   BF-WATCH TV    2021     ©    BF-WATCH 
+CHG: SSSSS SSSSSSSS SSSSSSSSS SSSSS SSS SSSSSSSS SSSSS SSSSSSSS SSSS SSSSSSSS 
+
+REF: Jean thought it was      already too late. Mr. And Mrs. Gage had opened a 
+HYP: TV   2021    ©  BF-WATCH ******* *** ***** *** *** **** **** *** ****** * 
+CHG: SSSS SSSSSSS SS SSSSSSSS DDDDDDD DDD DDDDD DDD DDD DDDD DDDD DDD DDDDDD D 
+
+REF: grocery store at the start of the term, and Jean helped out after school. 
+HYP: ******* ***** ** *** ***** ** *** ***** *** **** ****** *** ***** ******* 
+CHG: DDDDDDD DDDDD DD DDD DDDDD DD DDD DDDDD DDD DDDD DDDDDD DDD DDDDD DDDDDDD 
+
+REF: Usually, it's difficult for a boy or girl entering a new school to get 
+HYP: ******** **** ********* *** * *** ** **** ******** * *** ****** ** *** 
+CHG: DDDDDDDD DDDD DDDDDDDDD DDD D DDD DD DDDD DDDDDDDD D DDD DDDDDD DD DDD 
+
+REF: acquainted and make friends. But in Jean's case, it was easy. She's a very 
+HYP: ********** *** **** ******** *** ** ****** ***** ** *** ***** ***** * **** 
+CHG: DDDDDDDDDD DDD DDDD DDDDDDDD DDD DD DDDDDD DDDDD DD DDD DDDDD DDDDD D DDDD 
+
+REF: good artist. Her first drawing won a school award, and the prize-winning 
+HYP: **** ******* *** ***** ******* *** * ****** ****** *** *** ************* 
+CHG: DDDD DDDDDDD DDD DDDDD DDDDDDD DDD D DDDDDD DDDDDD DDD DDD DDDDDDDDDDDDD 
+
+REF: picture was posted on the bulletin board. That seemed to open the doors for 
+HYP: ******* *** ****** ** *** ******** ****** **** ****** ** **** *** ***** *** 
+CHG: DDDDDDD DDD DDDDDD DD DDD DDDDDDDD DDDDDD DDDD DDDDDD DD DDDD DDD DDDDD DDD 
+
+REF: her. All the girls were interested and anxious to meet her. The first 
+HYP: **** *** *** ***** **** ********** *** ******* ** **** **** *** ***** 
+CHG: DDDD DDD DDD DDDDD DDDD DDDDDDDDDD DDD DDDDDDD DD DDDD DDDD DDD DDDDD 
+
+REF: friend she made was Janice Nelson. Course, Marian High is co-educational, 
+HYP: ****** *** **** *** ****** ******* ******* ****** **** ** *************** 
+CHG: DDDDDD DDD DDDD DDD DDDDDD DDDDDDD DDDDDDD DDDDDD DDDD DD DDDDDDDDDDDDDDD 
+
+REF: and the other half of our student body is always interested in a pretty, 
+HYP: *** *** ***** **** ** *** ******* **** ** ****** ********** ** * ******* 
+CHG: DDD DDD DDDDD DDDD DD DDD DDDDDDD DDDD DD DDDDDD DDDDDDDDDD DD D DDDDDDD 
+
+REF: popular new girl. So, while Jean's new friend Janice Nelson was introducing 
+HYP: ******* *** ***** *** ***** ****** *** ****** ****** ****** *** *********** 
+CHG: DDDDDDD DDD DDDDD DDD DDDDD DDDDDD DDD DDDDDD DDDDDD DDDDDD DDD DDDDDDDDDDD 
+
+REF: her to some of the other girls, Jack Monroe and Bill Ellis, our two ranking 
+HYP: *** ** **** ** *** ***** ****** **** ****** *** TV   ****** *** *** ******* 
+CHG: DDD DD DDDD DD DDD DDDDD DDDDDD DDDD DDDDDD DDD      DDDDDD DDD DDD DDDDDDD 
+
+REF: casanovas, were making a little bet as to which would make the first date 
+HYP: ********** **** ****** * ****** *** ** ** ***** ***** **** *** ***** **** 
+CHG: DDDDDDDDDD DDDD DDDDDD D DDDDDD DDD DD DD DDDDD DDDDD DDDD DDD DDDDD DDDD 
+
+REF: with her. Bill Ellis made the first move. He was waiting on the steps when 
+HYP: **** **** **** ***** **** *** ***** ***** ** *** ******* ** *** ***** **** 
+CHG: DDDD DDDD DDDD DDDDD DDDD DDD DDDDD DDDDD DD DDD DDDDDDD DD DDD DDDDD DDDD 
+
+REF: Janice and Jean left school that afternoon, and soon was off to a running 
+HYP: ****** *** **** **** ****** **** ********** *** **** *** *** ** * ******* 
+CHG: DDDDDD DDD DDDD DDDD DDDDDD DDDD DDDDDDDDDD DDD DDDD DDD DDD DD D DDDDDDD 
+
+REF: start in the competition. Jack wasn't called the best broken field runner 
+HYP: ***** ** *** ************ **** ****** ****** *** **** ****** ***** ****** 
+CHG: DDDDD DD DDD DDDDDDDDDDDD DDDD DDDDDD DDDDDD DDD DDDD DDDDDD DDDDD DDDDDD 
+
+REF: in Marian history for nothing. Besides, he still had some trumps in his 
+HYP: ** ****** ******* *** ******** ******** ** ***** *** **** ****** ** *** 
+CHG: DD DDDDDD DDDDDDD DDD DDDDDDDD DDDDDDDD DD DDDDD DDD DDDD DDDDDD DD DDD 
+
+REF: hand. Like an open convertible, which had helped quite a few times in the 
+HYP: ***** **** ** **** ************ ***** *** ****** ***** * *** ***** ** *** 
+CHG: DDDDD DDDD DD DDDD DDDDDDDDDDDD DDDDD DDD DDDDDD DDDDD D DDD DDDDD DD DDD 
+
+REF: past. Bill didn't know it       yet, but  he   was    about to be   
+HYP: ***** **** 2021   ©    BF-WATCH TV   2021 Bill didn't know  it yet, 
+CHG: DDDDD DDDD                                                          
+
+REF: outmaneuvered by an  old   trick-- the fake          flat tire. Jack was    
+HYP: but           he was about to      be  outmaneuvered by   an    old  trick, 
+CHG:                                                                             
+
+REF: well on   the  lead  now. He  drove twelve blocks out  of   his way   
+HYP: the  fake flat tire. Jack was well  in     the    lead now. He  drove 
+CHG:      SSSS                                                             
+
+REF: to     drop   Janice off first. Then he took his    time getting Jean back 
+HYP: twelve blocks out    of  his    way  to drop Janice off  first.  Then he   
+CHG:                                                                            
+
+REF: to   the grocery store.  Jean introduced Jack to  her     mother and  
+HYP: took his time    getting Jean back       to   the grocery store. Jean 
+CHG:                                                                       
+
+REF: father,    and  presto, he'd won.   He  had     a   date    with Jean for 
+HYP: introduced Jack to      her  mother and father, and presto, he'd won. He  
+CHG:                                                                           
+
+REF: Friday night. From the  time jack called for    her  and all  during the    
+HYP: had    a      date with Jean for  Friday night. From the time Jack   called 
+CHG:                                                                             
+
+REF: afternoon and evening, Jean kept   thinking to        herself how      
+HYP: for       her and      all  during the      afternoon and     evening, 
+CHG:                                                                        
+
+REF: lucky she  was      that her     father had   moved his store here so     
+HYP: Jean  kept thinking to   herself how    lucky she   was that  her  father 
+CHG:                                                                           
+
+REF: she could attend Marian. She  was a   brand new    student and already 
+HYP: had moved his    store   here so  she could attend Marion. She was     
+CHG:                  SSSSSSS                                               
+
+REF: she'd won   the art     contest, made    a     whole circle of  friends, 
+HYP: a     brand new student and      already she'd won   the    art contest, 
+CHG:                                                                          
+
+REF: had  been asked to     pledge the      girls club. And   now here   she 
+HYP: made a    whole circle of     friends, had   been  asked to  pledge the 
+CHG:                                                                         
+
+REF: was    out   with the most popular boy in  school. But when they    drove 
+HYP: girls' club, and  now here she     was out with    the most popular boy   
+CHG:                                                                           
+
+REF: home, Jean    began to   learn a     little more about Jack. His   
+HYP: in    school. But   when they  drove home,  Jean began to    learn 
+CHG:                                                                    
+
+REF: popularity had    gone to    his   head. He         was completely sure of  
+HYP: a          little more about Jack. His   popularity had gone       to   his 
+CHG:                                                                             
+
+REF: himself, confident that none       of   the girls    could     resist him. 
+HYP: head.    He        was  completely sure of  himself, confident that   none 
+CHG:                                                                            
+
+REF: Jean's slap didn't hurt  his    face, but    it   certainly injured his 
+HYP: of     the  girls  could resist him.  Jean's slap didn't    hurt    his 
+CHG:                                                                         
+
+REF: pride. He  tried to        laugh   it  off,   but he    was thinking that 
+HYP: face,  but it    certainly injured his pride. He  tried to  laugh    it   
+CHG:                                                                           
+
+REF: he'd have to get even.    Jack didn't lose any time ***** **** giving the  
+HYP: off, but  he was thinking that he'd   have to  get  even. Jack didn't lose 
+CHG:                                                     IIIII IIII             
+
+REF: other boys  a  highly colored version of  the   date. To regain         
+HYP: any   time. He was    ******* giving  the other boys  a  highly-colored 
+CHG:                SSSSSS DDDDDDD                                           
+
+REF: his     self-confidence and build himself up     in  their           eyes, 
+HYP: version of              the date. To      regain his self-confidence and   
+CHG:                                                                            
+
+REF: he    added   a  few details, remarks about Jean  completely untrue. 
+HYP: build himself up in  their    eyes,   he    added a          few     
+CHG:                                                                      
+
+REF: But      then    gossip seldom worry      about   the truth. Now,   the    
+HYP: details. Remarks about  Jean,  completely untrue. But then,  gossip seldom 
+CHG:                                                                            
+
+REF: gossip began to  spread. Bill Ellis colored it    a  little  more and   
+HYP: worry  about the truth.  Now  the   gossip  began to spread. Bill Ellis 
+CHG:                                                                         
+
+REF: passed  it on. Then   Christine Manners took   over. First, she  used      
+HYP: colored it a   little more      and     passed it    on.    Then Christine 
+CHG:                                                                            
+
+REF: her     lunch hour  to     tell the  story to    every girl who  would 
+HYP: Manners took  over. First, she  used her   lunch hour  to   tell the   
+CHG:                                                                        
+
+REF: listen, and that  included practically every girl    in  the  school.  
+HYP: story   to  every girl     who         would listen, and that included 
+CHG:                                                                        
+
+REF: When        she   got  home, she took    over the telephone to    call all  
+HYP: practically every girl in    the school. When she got       home, she  took 
+CHG:                                                                             
+
+REF: those she'd missed.   Yes, gossip spreads like  wildfire, especially with 
+HYP: over  the   telephone to   call   all     those she'd     missed.    Yes, 
+CHG:                                                                           
+
+REF: the    help    of   girls     like       Christine. And by   the end   of   
+HYP: gossip spreads like wildfire, especially with       the help of  girls like 
+CHG:                                                                             
+
+REF: the        day, the harm was done, Jean's reputation was ruined. The next  
+HYP: Christine. And  by  the  end of    the    day,       the harm    was done. 
+CHG:                                                                            
+
+REF: morning, Christine  still wasn't  through. She'd been     jealous   of    
+HYP: Jean's   reputation was   ruined. The      next  morning, Christine still 
+CHG:                                                                           
+
+REF: the    new      girl's popularity and     talent from the ****** ********** 
+HYP: wasn't through. She'd  been       jealous of     the  new girl's popularity 
+CHG:                                                           IIIIII IIIIIIIIII 
+
+REF: *** ****** start. Now was    her chance. But the    picture gave Jean 
+HYP: and talent from   the state. She wanted  to  start. Now     was  her  
+CHG: III IIIIII                                                            
+
+REF: her     first inkling that    something was  wrong. She   knew    it   
+HYP: chance. But   the     picture gave      Jean her    first inkling that 
+CHG:                                                                        
+
+REF: had       been torn   down deliberately. She asked her  friend Janice 
+HYP: something was  wrong. She  knew          it  had   been torn   down   
+CHG:                                                                       
+
+REF: if            she'd done  something wrong, but    Janice was   too  
+HYP: deliberately. She   asked her       friend Janice if     she'd done 
+CHG:                                                                     
+
+REF: uncomfortable, embarrassed to  tell   Jean to  her            face.       
+HYP: something      wrong.      But Janice was  too uncomfortable, embarrassed 
+CHG:                                                                           
+
+REF: Everyone took pains to ignore her.  She      felt like  an outcast, yet  
+HYP: to       tell Jean  to her    face. Everyone took pains to ignore   her. 
+CHG:                                                                          
+
+REF: couldn't imagine why. Jean was      hurt and      bewildered. Marian High 
+HYP: She      felt    like an   outcast, yet  couldn't imagine     why.   Jean 
+CHG:                                                               SSSSSS      
+
+REF: had seemed so  wonderful   only   last week. Now it     was like      a    
+HYP: was hurt   and bewildered. Marion High had   *** seemed so  wonderful only 
+CHG:                                              DDD                           
+
+REF: completely different school-- gossip. Jean was lonely     and       
+HYP: last       week.     It       was     like a   completely different 
+CHG:                                                                     
+
+REF: miserable all     week, but she    was still     hopeful that  once she was 
+HYP: school.   Gossip. Jean  was lonely and miserable all     week, but  she was 
+CHG:                                                                             
+
+REF: initiated into    the  girls club, things would     be   better. However, 
+HYP: still     hopeful that once  she   was    initiated into the     girls'   
+CHG:                                                                           
+
+REF: Jean  had    already been blackballed even     before the club's  scavenger 
+HYP: club, things would   be   better.     However, Jean   had already been      
+CHG:                                                                             
+
+REF: hunt         had  started. But instead of        telling her, the      club 
+HYP: blackballed, even before   the club's  scavenger hunt    had  started. But  
+CHG:                                                                             
+
+REF: president had made    Jean's assignments far  more      difficult than 
+HYP: instead   of  telling her,   the         club president had       made 
+CHG:                                                                        
+
+REF: the    other       girls, hoping Jean      would fail, thus  disqualifying 
+HYP: Jean's assignments far    more   difficult than  the   other girls',       
+CHG:                                                                            
+
+REF: herself. Not  knowing, this  Jean started       out      in  the     
+HYP: hoping   Jean would    fail, thus disqualifying herself. Not knowing 
+CHG:                                                          SSS         
+
+REF: scavenger hunt as      eagerly as any of        the  others. She     was 
+HYP: this,     Jean started out     on the scavenger hunt as      eagerly as  
+CHG:                                                                          
+
+REF: willing to work twice   as  hard as      the other pledges to be   
+HYP: any     of the  others. She was  willing to  work  twice   as hard 
+CHG:                                                                    
+
+REF: initiated. The rest  of      the pledges had        finished their 
+HYP: as         the other pledges to  be      initiated. The      rest  
+CHG:                                                                    
+
+REF: assignments and had     been notified of    their       acceptance before 
+HYP: of          the pledges had  finished their assignments and        had    
+CHG:                                                                           
+
+REF: Jean returned. Now, the   girls      were   really embarrassed. Jean came 
+HYP: been notified  of   their acceptance before Jean   returned.    Now  the  
+CHG:                                                                           
+
+REF: back  with every  one          of   her  assignments completed. What  could 
+HYP: girls were really embarrassed. Jean came back        with       every one   
+CHG:                                                                             
+
+REF: she do  next?       ********** **** Nothing, Christine told her,  she'd 
+HYP: of  her assignments completed. What could    she       do   next? The   
+CHG:                     IIIIIIIIII IIII SSSSSSSS                            
+
+REF: been blackballed. She       wasn't wanted. Jean  couldn't understand.  
+HYP: last thing        Christine told   her,    she'd been     blackballed. 
+CHG:                                                                        
+
+REF: She'd done   her     assignments as       well        as    any  of  
+HYP: She   wasn't wanted. Jean        couldn't understand. She'd done her 
+CHG:                                                                      
+
+REF: them.       Why had  she been rejected? Christine said Jean knew very 
+HYP: assignments as  well as  any  of        them.     Why  had  she  been 
+CHG:                                                                       
+
+REF: well      why.      Because they didn't want her   kind of      girl in     
+HYP: rejected? Christine said    Jean knew   very well. Why? Because they didn't 
+CHG:                                                                             
+
+REF: their club. Jean still didn't understand. Janice finally had  to    explain 
+HYP: want  her   kind of    girl   in          their  club.   Jean still didn't  
+CHG:                                                                             
+
+REF: that        they   all     knew about her,    about Jack's story. Jean 
+HYP: understand. Janice finally had  to    explain that  they   all    knew 
+CHG:                                                                        
+
+REF: was   stunned. How   could  anybody believe that ******** about her?  
+HYP: about her,     about Jack's story.  Jean    was  stunned. How   could 
+CHG:                                                  IIIIIIII SSSSS       
+
+REF: When    Mr.     And   Mrs. Gage came home, Jean told them what had  
+HYP: anybody believe that? It   was  her. When  Mr.  and  Mrs. Gage came 
+CHG:                                                                     
+
+REF: happened, that she  hadn't been accepted by        the  club because of   
+HYP: home,     Jean told them   what had      happened. That she  hadn't  been 
+CHG:                                                                           
+
+REF: the      gossip about her. She     said she was    quitting school. *** 
+HYP: accepted by     the   club because of   the gossip about    her.    She 
+CHG:                                                                     III 
+
+REF: **** *** *** ******** ******* *** **** *** ****** ** ** **** ** ******* *** 
+HYP: said she was quitting school. She said she wanted to go back to school. She 
+CHG: IIII III III IIIIIIII IIIIIII III IIII III IIIIII II II IIII II IIIIIII III 
+
+REF: **** *** So     that's the story she told    me. That's why the   Gages 
+HYP: said she wanted to     go  back  to  school. So  that's the story she   
+CHG: IIII III                                                                
+
+REF: came to  see    me. They agreed with Jean. It  would be   better if   she   
+HYP: told me. That's why the  Gages  came to    see me.   They agreed with Jean. 
+CHG:                                                                             
+
+REF: left school. But I      asked them to   wait,   give me a     chance to 
+HYP: It   would   be  better if    she  left school. But  I  asked them   to 
+CHG:                                                                         
+
+REF: do    what I  could. Gossip is difficult to   fight. You    have   to 
+HYP: wait. Give me a      chance to do        what I      could. Gossip is 
+CHG:                                                                       
+
+REF: go        right to     the source and stamp it    out. That's exactly what 
+HYP: difficult to    fight. You have   to  go    right to   the    source  and  
+CHG:                                                                            
+
+REF: I     did. I    called in      Jack Monroe, asked him point  blank if   
+HYP: stamp it   out. That's exactly what I       did.  I   called in    Jack 
+CHG:                                                                         
+
+REF: he      was   the gossip. Jack   was surprised. He  thought only    women 
+HYP: Monroe. Asked him point   blank. If  he         was the     gossip. Jack  
+CHG:                                                                           
+
+REF: gossip. Men        just, well--  **** realize the     harm it    would 
+HYP: was     surprised. He    thought only women   gossip. Men  just, well, 
+CHG:                                  IIII SSSSSSS                          
+
+REF: do.   When     I   had  finished explaining what his  loose talk had      
+HYP: never realized the harm it       would      do.  When I     had  finished 
+CHG:                                                                           
+
+REF: done       to   Jean, Jack  asked me  what he could do,  and   I  told him 
+HYP: explaining what his   loose talk  had done to Jean, Jack asked me what he  
+CHG:                                                                            
+
+REF: a     way, the only way. He   thought it    over. It   wasn't going to      
+HYP: could **** do. And  I    told him     away. The   only way.   He    thought 
+CHG: SSSSS DDDD                                                                  
+
+REF: be easy. It would  be    embarrassing, and we    both knew  it, 
+HYP: it over. It wasn't going to            be  easy. It   would be  
+CHG:                                                                 
+
+REF: but          he  finally agreed. Give Jack credit. He went    through with 
+HYP: embarrassing and we      both    knew it.  But     he finally agreed. **** 
+CHG:                                                                       DDDD 
+
+REF: it.  His  voice   broke a    few     times, but he    managed to tell 
+HYP: Give Jack credit. He    went through it.    His voice broke   a  few  
+CHG:                                                                       
+
+REF: them   all that there   was nothing to   the gossip, that  he  had     made 
+HYP: times. But he   managed to  tell    them all that    there was nothing to   
+CHG:                                                                             
+
+REF: up  the     story, and was to   blame for everything. But that wasn't quite 
+HYP: the gossip. That   he  had made up    the story       and was  to     blame 
+CHG:                                                                             
+
+REF: right. I           told them that   anyone who    listens to   gossip is   
+HYP: for    everything. But  that wasn't quite  right. I       told them   that 
+CHG:                                                                            
+
+REF: almost as  much    to blame  as the    person who  spreads it.   We were 
+HYP: anyone who listens to gossip is almost as     much to      blame as the  
+CHG:                                                                          
+
+REF: going  to  discuss the problem in   assembly, make the     whole school  
+HYP: person who spreads it. We      were going     to   discuss the   problem 
+CHG:                                                                          
+
+REF: aware of        the  danger, and   make   sure  that no  Marian  student 
+HYP: in    assembly. Make the     whole school aware of   the danger. And     
+CHG:                                                          SSSSSSS         
+
+REF: would ever again be hurt   the     way   Jean was.  The next day, the whole 
+HYP: make  sure that  no Marion student would ever again be  hurt the  way Jean  
+CHG:                                                                             
+
+REF: student body realized what they had   done    to   Jean.    Now  they 
+HYP: was.    The  next     day  the  whole student body realized what they 
+CHG:                                                                       
+
+REF: wanted to   make it    up  to   her.   She made a  fresh start, and  was 
+HYP: had    done to   Jean. Now they wanted to  make it up    to     her. She 
+CHG:                                                                          
+
+REF: soon one of    Marian's most popular girls, one of our      real leaders. 
+HYP: made a   fresh start    and  was     soon   one of Marion's most popular  
+CHG:                SSSSSSSS                                                   
+
+REF: What   could have been another gossip   tragedy had   been a    happy   
+HYP: girls. One   of   our  real    leaders. What    could have been another 
+CHG:                                                                         
+
+REF: ending. But     don't forget this, there needn't have been  so     much  
+HYP: gossip  tragedy had   been   a     happy ending. But  don't forget this. 
+CHG:                                                                          
+
+REF: as    a       near tragedy if our  students, instead of   imitating this 
+HYP: There needn't have been    so much as        a       near tragedy   of   
+CHG:                            SS                                            
+
+REF: bird, the      gossipy parrot, had       instead copied three far     
+HYP: our   students instead of      imitating this    bird.  The   gossipy 
+CHG:                                                                       
+
+REF: wiser  creatures, the     three  little monkeys, who   see        no  evil, 
+HYP: parrot had        instead copied three  far      wiser creatures. The three 
+CHG:                                                                             
+
+REF: hear   no      evil, and speak no    evil. ** ***** *** ***** ** ***** **** 
+HYP: little monkeys who   see no    evil, hear  no evil, and speak no evil. They 
+CHG:                                            II IIIII III IIIII II IIIII IIII 
+
+REF: *** 
+HYP: all 
+CHG: III 
+
+
+*** gossip-turbo.json ***
+
+Overall statistics
+WER: 2.51%
+MER: 2.48%
+WIL: 3.60%
+WIP: 96.40%
+
+Edit Statistics
+Hits: 1456
+Substitutions: 17
+Insertions: 19
+Deletions: 1
+
+Hallucinations
+Number of hallucinations: 2
+* Thank you.
+* The gossipy parrot had been a happy ending. The gossipy parrot had been a happy
+
+Dropouts
+Number of dropouts: 0
+
+Edits
+REF: ***** **** Pretty clever bird, the parrot. He can actually talk, pronounce 
+HYP: Thank you. Pretty clever bird, the parrot. He can actually talk, pronounce 
+CHG: IIIII IIII                                                                 
+
+REF: words. Of course, he has no idea what the words mean, so we never take him 
+HYP: words. Of course, he has no idea what the words mean, so we never take him 
+CHG:                                                                            
+
+REF: seriously. Unfortunately, that's not true with gossips. They use words just 
+HYP: seriously. Unfortunately, that's not true with gossips. They use words just 
+CHG:                                                                             
+
+REF: as carelessly as the parrot, but sometimes we take them seriously, and 
+HYP: as carelessly as the parrot, but sometimes we take them seriously, and 
+CHG:                                                                        
+
+REF: often innocent persons are harmed. You see, gossips don't stop to think 
+HYP: often innocent persons are harmed. You see, gossips don't stop to think 
+CHG:                                                                         
+
+REF: that words are dangerous. They influence our national life, and in war  
+HYP: that words are dangerous. They influence our national life, and in war, 
+CHG:                                                                         
+
+REF: they are powerful weapons. Gossips toss words around as carelessly as 
+HYP: they are powerful weapons. Gossips toss words around as carelessly as 
+CHG:                                                                       
+
+REF: parrots, with no more sense of the harm they can do. Did I hear somebody 
+HYP: parrots, with no more sense of the harm they can do. Did I hear somebody 
+CHG:                                                                          
+
+REF: say gossiping is monopolized by women? Far from it. Anyone who uses words 
+HYP: say gossiping is monopolized by women? Far from it. Anyone who uses words 
+CHG:                                                                           
+
+REF: carelessly, especially to talk behind someone's back, is a gossip. Let me 
+HYP: carelessly, especially to talk behind someone's back, is a gossip. Let me 
+CHG:                                                                           
+
+REF: tell you a little story about a gossip. This is Marian High, my school. I'm 
+HYP: tell you a little story about a gossip. This is Marion High, my school. I'm 
+CHG:                                                 SSSSSS                      
+
+REF: the principal, George Eastmoor. There were some people in my office this 
+HYP: the principal, George Eastmore. There were some people in my office this 
+CHG:                       SSSSSSSSS                                          
+
+REF: particular morning, Mr. And Mrs. Gage and their daughter, Jean. They told 
+HYP: particular morning, Mr. and Mrs. Gage and their daughter, Jean. They told 
+CHG:                                                                           
+
+REF: me Jean would have to leave school. Why? Because of the malicious gossip 
+HYP: me Jean would have to leave school. Why? Because of the malicious gossip 
+CHG:                                                                          
+
+REF: about her. I was shocked, and I asked for details to see if we could do 
+HYP: about her. I was shocked, and I asked for details to see if we could do 
+CHG:                                                                         
+
+REF: something about it. We began talking, even though Jean thought it was 
+HYP: something about it. We began talking, even though Jean thought it was 
+CHG:                                                                       
+
+REF: already too late. Mr. And Mrs. Gage had opened a grocery store at the start 
+HYP: already too late. Mr. and Mrs. Gage had opened a grocery store at the start 
+CHG:                                                                             
+
+REF: of the term, and Jean helped out after school. Usually, it's difficult for 
+HYP: of the term, and Jean helped out after school. Usually, it's difficult for 
+CHG:                                                                            
+
+REF: a boy or girl entering a new school to get acquainted and make friends. But 
+HYP: a boy or girl entering a new school to get acquainted and make friends, but 
+CHG:                                                                             
+
+REF: in Jean's case, it was easy. She's a very good artist. Her first drawing 
+HYP: in Jean's case, it was easy. She's a very good artist. Her first drawing 
+CHG:                                                                          
+
+REF: won a school award, and the prize-winning picture was posted on the 
+HYP: won a school award, and the prize-winning picture was posted on the 
+CHG:                                                                     
+
+REF: bulletin board. That seemed to open the doors for her. All the girls were 
+HYP: bulletin board. That seemed to open the doors for her. All the girls were 
+CHG:                                                                           
+
+REF: interested and anxious to meet her. The first friend she made was Janice 
+HYP: interested and anxious to meet her. The first friend she made was Janice 
+CHG:                                                                          
+
+REF: Nelson. ** Course, Marian High is co-educational, and the other half of our 
+HYP: Nelson. Of course, Marion High is co-educational, and the other half of our 
+CHG:         II         SSSSSS                                                   
+
+REF: student body is always interested in a pretty, popular new girl. So, while 
+HYP: student body is always interested in a pretty, popular new girl. So, while 
+CHG:                                                                            
+
+REF: Jean's new friend  Janice Nelson  was introducing her to some of the other 
+HYP: Jean's new friend, Janice Nelson, was introducing her to some of the other 
+CHG:                                                                            
+
+REF: girls, Jack Monroe and Bill Ellis, our two ranking casanovas, were making a 
+HYP: girls, Jack Monroe and Bill Ellis, our two ranking Casanovas, were making a 
+CHG:                                                                             
+
+REF: little bet as to which would make the first date with her. Bill Ellis made 
+HYP: little bet as to which would make the first date with her. Bill Ellis made 
+CHG:                                                                            
+
+REF: the first move. He was waiting on the steps when Janice and Jean left 
+HYP: the first move. He was waiting on the steps when Janice and Jean left 
+CHG:                                                                       
+
+REF: school that afternoon, and soon was off to a running start in the 
+HYP: school that afternoon, and soon was off to a running start in the 
+CHG:                                                                   
+
+REF: competition. Jack wasn't called the best broken field runner in Marian 
+HYP: competition. Jack wasn't called the best broken field runner in Marion 
+CHG:                                                                 SSSSSS 
+
+REF: history for nothing. Besides, he still had some trumps in his hand. Like an 
+HYP: history for nothing. Besides, he still had some trumps in his hand, like an 
+CHG:                                                                             
+
+REF: open convertible, which had helped quite a few times in the past. Bill 
+HYP: open convertible, which had helped quite a few times in the past. Bill 
+CHG:                                                                        
+
+REF: didn't know it yet, but he was about to be outmaneuvered by an old trick-- 
+HYP: didn't know it yet, but he was about to be outmaneuvered by an old trick,  
+CHG:                                                                            
+
+REF: the fake flat tire. Jack was well on the lead now. He drove twelve blocks 
+HYP: the fake flat tire. Jack was well in the lead now. He drove twelve blocks 
+CHG:                                   SS                                      
+
+REF: out of his way to drop Janice off first. Then  he took his time getting 
+HYP: out of his way to drop Janice off first. Then, he took his time getting 
+CHG:                                                                         
+
+REF: Jean back to the grocery store. Jean introduced Jack to her mother and 
+HYP: Jean back to the grocery store. Jean introduced Jack to her mother and 
+CHG:                                                                        
+
+REF: father, and presto, he'd won. He had a date with Jean for Friday night. 
+HYP: father, and presto, he'd won. He had a date with Jean for Friday night. 
+CHG:                                                                         
+
+REF: From the time jack called for her  and all during the afternoon and 
+HYP: From the time Jack called for her, and all during the afternoon and 
+CHG:                                                                     
+
+REF: evening, Jean kept thinking to herself how lucky she was that her father 
+HYP: evening, Jean kept thinking to herself how lucky she was that her father 
+CHG:                                                                          
+
+REF: had moved his store here so she could attend Marian. She was a brand new 
+HYP: had moved his store here so she could attend Marion. She was a brand new 
+CHG:                                              SSSSSSS                     
+
+REF: student  and already she'd won the art contest, made a whole circle of 
+HYP: student, and already she'd won the art contest, made a whole circle of 
+CHG:                                                                        
+
+REF: friends, had been asked to pledge the girls  club. And now  here she was 
+HYP: friends, had been asked to pledge the girls' club, and now, here she was 
+CHG:                                                                          
+
+REF: out with the most popular boy in school. But  when they drove home, Jean 
+HYP: out with her most popular boy in school. But, when they drove home, Jean 
+CHG:          SSS                                                             
+
+REF: began to learn a little more about Jack. His popularity had gone to his 
+HYP: began to learn a little more about Jack. His popularity had gone to his 
+CHG:                                                                         
+
+REF: head. He was completely sure of himself, confident that none of the girls 
+HYP: head. He was completely sure of himself, confident that none of the girls 
+CHG:                                                                           
+
+REF: could resist him. Jean's slap didn't hurt his face, but it certainly 
+HYP: could resist him. Jean's slap didn't hurt his face, but it certainly 
+CHG:                                                                      
+
+REF: injured his pride. He tried to laugh it off, but he was thinking that he'd 
+HYP: injured his pride. He tried to laugh it off, but he was thinking that he'd 
+CHG:                                                                            
+
+REF: have to get even. Jack didn't lose any time giving the other boys a 
+HYP: have to get even. Jack didn't lose any time giving the other boys a 
+CHG:                                                                     
+
+REF: highly         colored version of the date. To regain his self-confidence 
+HYP: highly-colored ******* version of the date. To regain his self-confidence 
+CHG: SSSSSSSSSSSSSS DDDDDDD                                                    
+
+REF: and build himself up in their eyes, he added a few details, remarks about 
+HYP: and build himself up in their eyes, he added a few details, remarks about 
+CHG:                                                                           
+
+REF: Jean  completely untrue. But then  gossip seldom worry about the truth. 
+HYP: Jean, completely untrue. But then, gossip seldom worry about the truth. 
+CHG:                                                                         
+
+REF: Now, the gossip began to spread. Bill Ellis colored it a little more and 
+HYP: Now, the gossip began to spread. Bill Ellis colored it a little more and 
+CHG:                                                                          
+
+REF: passed it on. Then  Christine Manners took over. First, she used her lunch 
+HYP: passed it on. Then, Christine Manners took over. First, she used her lunch 
+CHG:                                                                            
+
+REF: hour to tell the story to every girl who would listen,   and that included 
+HYP: hour to tell the story to every girl who had   listened, and that included 
+CHG:                                          SSSSS SSSSSSSSS                   
+
+REF: practically every girl in the school. When she got home, she took over the 
+HYP: practically every girl in the school. When she got home, she took over the 
+CHG:                                                                            
+
+REF: telephone to call all those she'd missed. Yes, gossip spreads like 
+HYP: telephone to call all those she'd missed. Yes, gossip spreads like 
+CHG:                                                                    
+
+REF: wildfire, especially with the help of girls like Christine. And by the end 
+HYP: wildfire, especially with the help of girls like Christine. And by the end 
+CHG:                                                                            
+
+REF: of the day, the harm was done, Jean's reputation was ruined. The next 
+HYP: of the day, the harm was done. Jean's reputation was ruined. The next 
+CHG:                                                                       
+
+REF: morning, Christine still wasn't through. She'd been jealous of the new 
+HYP: morning, Christine still wasn't through. She'd been jealous of the new 
+CHG:                                                                        
+
+REF: girl's popularity and talent from the start. Now was her chance. But the 
+HYP: girl's popularity and talent from the start. Now was her chance. But the 
+CHG:                                                                          
+
+REF: picture gave Jean her first inkling that something was wrong. She knew it 
+HYP: picture gave Jean her first inkling that something was wrong. She knew it 
+CHG:                                                                           
+
+REF: had been torn down deliberately. She asked her friend  Janice  if she'd 
+HYP: had been torn down deliberately. She asked her friend, Janice, if she'd 
+CHG:                                                                         
+
+REF: done something wrong, but Janice was too uncomfortable, embarrassed to tell 
+HYP: done something wrong. But Janice was too uncomfortable, embarrassed to tell 
+CHG:                                                                             
+
+REF: Jean to her face. Everyone took pains to ignore her. She felt like an 
+HYP: Jean to her face. Everyone took pains to ignore her. She felt like an 
+CHG:                                                                       
+
+REF: outcast, yet couldn't imagine why. Jean was hurt and bewildered. Marian 
+HYP: outcast, yet couldn't imagine why. Jean was hurt and bewildered. Marion 
+CHG:                                                                  SSSSSS 
+
+REF: High had seemed so wonderful only last week. Now it was like a completely 
+HYP: High had seemed so wonderful only last week. Now it was like a completely 
+CHG:                                                                           
+
+REF: different school-- gossip. Jean was lonely and miserable all week, but she 
+HYP: different school.  Gossip. Jean was lonely and miserable all week, but she 
+CHG:                                                                            
+
+REF: was still hopeful that once she was initiated into the girls  club, things 
+HYP: was still hopeful that once she was initiated into the girls' club, things 
+CHG:                                                                            
+
+REF: would be better. However, Jean had already been blackballed even before the 
+HYP: would be better. However, Jean had already been blackballed even before the 
+CHG:                                                                             
+
+REF: club's scavenger hunt had started. But instead of telling her, the club 
+HYP: club's scavenger hut  had started. But instead of telling her, the club 
+CHG:                  SSSS                                                   
+
+REF: president had made Jean's assignments far more difficult than the other 
+HYP: president had made Jean's assignments far more difficult than the other 
+CHG:                                                                         
+
+REF: girls, hoping Jean would fail, thus disqualifying herself. Not knowing, 
+HYP: girls, hoping Jean would fail, thus disqualifying herself. Not knowing  
+CHG:                                                                         
+
+REF: this  Jean started out in the scavenger hunt as eagerly as any of the 
+HYP: this, Jean started out on the scavenger hunt as eagerly as any of the 
+CHG:                        SS                                             
+
+REF: others. She was willing to work twice as hard as the other pledges to be 
+HYP: others. She was willing to work twice as hard as the other pledges to be 
+CHG:                                                                          
+
+REF: initiated. The rest of the pledges had finished their assignments and had 
+HYP: initiated. The rest of the pledges had finished their assignments and had 
+CHG:                                                                           
+
+REF: been notified of their acceptance before Jean returned. Now, the girls were 
+HYP: been notified of their acceptance before Jean returned. Now  the girls were 
+CHG:                                                                             
+
+REF: really embarrassed. Jean came back with every one of her assignments 
+HYP: really embarrassed. Jean came back with every one of her assignments 
+CHG:                                                                      
+
+REF: completed. What could she do next? Nothing, Christine told her, she'd been 
+HYP: completed. What could she do next? Nothing, Christine told her. She'd been 
+CHG:                                                                            
+
+REF: blackballed. She wasn't wanted. Jean couldn't understand. She'd done her 
+HYP: blackballed. She wasn't wanted. Jean couldn't understand. She'd done her 
+CHG:                                                                          
+
+REF: assignments as well as any of them. Why had she been rejected? Christine 
+HYP: assignments as well as any of them. Why had she been rejected? Christine 
+CHG:                                                                          
+
+REF: said Jean knew very well why. Because they didn't want her kind of girl in 
+HYP: said Jean knew very well why, because they didn't want her kind of girl in 
+CHG:                                                                            
+
+REF: their club. Jean still didn't understand. Janice finally had to explain 
+HYP: their club. Jean still didn't understand. Janice finally had to explain 
+CHG:                                                                         
+
+REF: that they all knew about her, about Jack's story. Jean was stunned. How 
+HYP: that they all knew about her, about Jack's story. Jean was stunned. How 
+CHG:                                                                         
+
+REF: could anybody believe that about her? When Mr. And Mrs. Gage came home, 
+HYP: could anybody believe that about her? When Mr. and Mrs. Gage came home, 
+CHG:                                                                         
+
+REF: Jean told them what had happened, that she hadn't been accepted by the club 
+HYP: Jean told them what had happened. That she hadn't been accepted by the club 
+CHG:                                                                             
+
+REF: because of the gossip about her. She said she was quitting school. So 
+HYP: because of the gossip about her. She said she was quitting school. So 
+CHG:                                                                       
+
+REF: that's the story she told me. That's why the Gages came to see me. They 
+HYP: that's the story she told me. That's why the Gages came to see me. They 
+CHG:                                                                         
+
+REF: agreed with Jean. It would be better if she left school. But I asked them 
+HYP: agreed with Jean. It would be better if she left school. But I asked them 
+CHG:                                                                           
+
+REF: to wait, give me a chance to do what I could. Gossip is difficult to fight. 
+HYP: to wait. Give me a chance to do what I could. Gossip is difficult to fight. 
+CHG:                                                                             
+
+REF: You have to go right to the source and stamp it out. That's exactly what I 
+HYP: You have to go right to the source and stamp it out. That's exactly what I 
+CHG:                                                                            
+
+REF: did. I called in Jack Monroe, asked him point blank if he was the gossip. 
+HYP: did. I called in Jack Monroe, asked him point blank if he was the gossip. 
+CHG:                                                                           
+
+REF: Jack was surprised. He thought only women gossip. Men just, well-- realize  
+HYP: Jack was surprised. He thought only women gossip. Men just, well,  realized 
+CHG:                                                                    SSSSSSSS 
+
+REF: the harm it would do. When I had finished explaining what his loose talk 
+HYP: the harm it would do. When I had finished explaining what his loose talk 
+CHG:                                                                          
+
+REF: had done to Jean, Jack asked me what he could do, and I told him a way, the 
+HYP: had done to Jean, Jack asked me what he could do. And I told him a way, the 
+CHG:                                                                             
+
+REF: only way. He thought it over. It wasn't going to be easy. It would be 
+HYP: only way. He thought it over. It wasn't going to be easy. It would be 
+CHG:                                                                       
+
+REF: embarrassing, and we both knew it, but he finally agreed. Give Jack credit. 
+HYP: embarrassing, and we both knew it. But he finally agreed. Give Jack credit. 
+CHG:                                                                             
+
+REF: He went through with it. His voice broke a few times, but he managed to 
+HYP: He went through with it. His voice broke a few times, but he managed to 
+CHG:                                                                         
+
+REF: tell them all that there was nothing to the gossip, that he had made up the 
+HYP: tell them all that there was nothing to the gossip, that he had made up the 
+CHG:                                                                             
+
+REF: story, and was to blame for everything. But that wasn't quite right. I told 
+HYP: story  and was to blame for everything. But that wasn't quite right. I told 
+CHG:                                                                             
+
+REF: them that anyone who listens to gossip is almost as much to blame as the 
+HYP: them that anyone who listens to gossip is almost as much to blame as the 
+CHG:                                                                          
+
+REF: person who spreads it. We were going to discuss the problem in assembly, 
+HYP: person who spreads it. We were going to discuss the problem in assembly, 
+CHG:                                                                          
+
+REF: make the whole school aware of the danger, and make sure that no Marian 
+HYP: make the whole school aware of the danger, and make sure that no Marion 
+CHG:                                                                  SSSSSS 
+
+REF: student would ever again be hurt the way Jean was. The next day, the whole 
+HYP: student would ever again be hurt the way Jean was. The next day, the whole 
+CHG:                                                                            
+
+REF: student body realized what they had done to Jean. Now they wanted to make 
+HYP: student body realized what they had done to Jean. Now they wanted to make 
+CHG:                                                                           
+
+REF: it up to her. She made a fresh start, and was soon one of Marian's most 
+HYP: it up to her. She made a fresh start  and was soon one of Marion's most 
+CHG:                                                           SSSSSSSS      
+
+REF: popular girls, one of our real leaders. What could have been another gossip 
+HYP: popular girls, one of our real leaders. What could have been another gossip 
+CHG:                                                                             
+
+REF: tragedy had been a happy ending. But don't forget this, there needn't have 
+HYP: tragedy had been a happy ending. But don't forget this. There needn't have 
+CHG:                                                                            
+
+REF: been so much as a near tragedy if our students, instead of imitating this 
+HYP: been so much as a near tragedy of our students  instead of imitating this 
+CHG:                                SS                                         
+
+REF: bird, the gossipy parrot, had instead copied three far wiser creatures, the 
+HYP: bird. The gossipy parrot  had instead copied three far wiser creatures, the 
+CHG:                                                                             
+
+REF: three little monkeys, who see no evil, hear no evil, and speak no evil. *** 
+HYP: three little monkeys, who see no evil, hear no evil, and speak no evil. The 
+CHG:                                                                         III 
+
+REF: ******* ****** *** **** * ***** ******* *** ******* ****** *** **** * ***** 
+HYP: gossipy parrot had been a happy ending. The gossipy parrot had been a happy 
+CHG: IIIIIII IIIIII III IIII I IIIII IIIIIII III IIIIIII IIIIII III IIII I IIIII 
+
+REF: ******* 
+HYP: ending. 
+CHG: IIIIIII 
+
+
+*** gossip-medium.json ***
+
+Overall statistics
+WER: 1.56%
+MER: 1.56%
+WIL: 2.76%
+WIP: 97.24%
+
+Edit Statistics
+Hits: 1454
+Substitutions: 18
+Insertions: 3
+Deletions: 2
+
+Hallucinations
+Number of hallucinations: 0
+
+Dropouts
+Number of dropouts: 0
+
+Edits
+REF: Pretty clever bird, the parrot. He can actually talk, pronounce words. Of 
+HYP: Pretty clever bird, the parrot. He can actually talk, pronounce words. Of 
+CHG:                                                                           
+
+REF: course, he has no idea what the words mean, so we never take him seriously. 
+HYP: course, he has no idea what the words mean, so we never take him seriously. 
+CHG:                                                                             
+
+REF: Unfortunately, that's not true with gossips. They use words just as 
+HYP: Unfortunately, that's not true with gossips. They use words just as 
+CHG:                                                                     
+
+REF: carelessly as the parrot, but sometimes we take them seriously, and often 
+HYP: carelessly as the parrot, but sometimes we take them seriously, and often 
+CHG:                                                                           
+
+REF: innocent persons are harmed. You see, gossips don't stop to think that 
+HYP: innocent persons are harmed. You see, gossips don't stop to think that 
+CHG:                                                                        
+
+REF: words are dangerous. They influence our national life, and in war  they are 
+HYP: words are dangerous. They influence our national life, and in war, they are 
+CHG:                                                                             
+
+REF: powerful weapons. Gossips toss words around as carelessly as parrots, with 
+HYP: powerful weapons. Gossips toss words around as carelessly as parrots, with 
+CHG:                                                                            
+
+REF: no more sense of the harm they can do. Did I hear somebody say gossiping is 
+HYP: no more sense of the harm they can do. Did I hear somebody say gossiping is 
+CHG:                                                                             
+
+REF: monopolized by women? Far from it. Anyone who uses words carelessly, 
+HYP: monopolized by women? Far from it. Anyone who uses words carelessly, 
+CHG:                                                                      
+
+REF: especially to talk behind someone's back, is a gossip. Let me tell you a 
+HYP: especially to talk behind someone's back, is a gossip. Let me tell you a 
+CHG:                                                                          
+
+REF: little story about a gossip. This is Marian High, my school. I'm the 
+HYP: little story about a gossip. This is Marion High, my school. I'm the 
+CHG:                                      SSSSSS                          
+
+REF: principal, George Eastmoor. There were some people in my office this 
+HYP: principal, George Eastmore. There were some people in my office this 
+CHG:                   SSSSSSSSS                                          
+
+REF: particular morning, Mr. And Mrs. Gage and their daughter, Jean. They told 
+HYP: particular morning, Mr. and Mrs. Gage and their daughter, Jean. They told 
+CHG:                                                                           
+
+REF: me Jean would have to leave school. Why? Because of the malicious gossip 
+HYP: me Jean would have to leave school. Why? Because of the malicious gossip 
+CHG:                                                                          
+
+REF: about her. I was shocked, and I asked for details to see if we could do 
+HYP: about her. I was shocked, and I asked for details to see if we could do 
+CHG:                                                                         
+
+REF: something about it. We began talking, even though Jean thought it was 
+HYP: something about it. We began talking, even though Jean thought it was 
+CHG:                                                                       
+
+REF: already too late. Mr. And Mrs. Gage had opened a grocery store at the start 
+HYP: already too late. Mr. and Mrs. Gage had opened a grocery store at the start 
+CHG:                                                                             
+
+REF: of the term, and Jean helped out after school. Usually, it's difficult for 
+HYP: of the term, and Jean helped out after school. Usually  it's difficult for 
+CHG:                                                                            
+
+REF: a boy or girl entering a new school to get acquainted and make friends. But 
+HYP: a boy or girl entering a new school to get acquainted and make friends, but 
+CHG:                                                                             
+
+REF: in Jean's case, it was easy. She's a very good artist. Her first drawing 
+HYP: in Jean's case, it was easy. She's a very good artist. Her first drawing 
+CHG:                                                                          
+
+REF: won a school award, and the prize-winning picture was posted on the 
+HYP: won a school award, and the prize-winning picture was posted on the 
+CHG:                                                                     
+
+REF: bulletin board. That seemed to open the doors for her. All the girls were 
+HYP: bulletin board. That seemed to open the doors for her. All the girls were 
+CHG:                                                                           
+
+REF: interested and anxious to meet her. The first friend she made was Janice 
+HYP: interested and anxious to meet her. The first friend she made was Janice 
+CHG:                                                                          
+
+REF: Nelson. ** Course, Marian High is co-educational, and the other half of our 
+HYP: Nelson. Of course, Marion High is co-educational, and the other half of our 
+CHG:         II         SSSSSS                                                   
+
+REF: student body is always interested in a pretty, popular new girl. So, while 
+HYP: student body is always interested in a pretty, popular new girl. So  while 
+CHG:                                                                            
+
+REF: Jean's new friend  Janice Nelson  was introducing her to some of the other 
+HYP: Jean's new friend, Janice Nelson, was introducing her to some of the other 
+CHG:                                                                            
+
+REF: girls, Jack Monroe and Bill Ellis, our two ranking casanovas, were making a 
+HYP: girls, Jack Monroe and Bill Ellis, our two ranking Casanovas, were making a 
+CHG:                                                                             
+
+REF: little bet as to which would make the first date with her. Bill Ellis made 
+HYP: little bet as to which would make the first date with her. Bill Ellis made 
+CHG:                                                                            
+
+REF: the first move. He was waiting on the steps when Janice and Jean left 
+HYP: the first move. He was waiting on the steps when Janice and Jean left 
+CHG:                                                                       
+
+REF: school that afternoon, and soon was off to a running start in the 
+HYP: school that afternoon, and soon was off to a running start in the 
+CHG:                                                                   
+
+REF: competition. Jack wasn't called the best broken       field runner in 
+HYP: competition. Jack wasn't called the best broken-field ***** runner in 
+CHG:                                          SSSSSSSSSSSS DDDDD           
+
+REF: Marian history for nothing. Besides, he still had some trumps in his hand. 
+HYP: Marion history for nothing. Besides, he still had some trumps in his hand, 
+CHG: SSSSSS                                                                     
+
+REF: Like an open convertible, which had helped quite a few times in the past. 
+HYP: like an open convertible, which had helped quite a few times in the past. 
+CHG:                                                                           
+
+REF: Bill didn't know it yet, but he was about to be outmaneuvered by an old 
+HYP: Bill didn't know it yet, but he was about to be outmaneuvered by an old 
+CHG:                                                                         
+
+REF: trick-- the fake flat tire. Jack was well on the lead now. He drove twelve 
+HYP: trick,  the fake flat tire. Jack was well in the lead now. He drove twelve 
+CHG:                                           SS                               
+
+REF: blocks out of his way to drop Janice off first. Then he took his time 
+HYP: blocks out of his way to drop Janice off first. Then he took his time 
+CHG:                                                                       
+
+REF: getting Jean back to the grocery store. Jean introduced Jack to her mother 
+HYP: getting Jean back to the grocery store. Jean introduced Jack to her mother 
+CHG:                                                                            
+
+REF: and father, and presto, he'd won. He had a date with Jean for Friday night. 
+HYP: and father, and presto, he'd won. He had a date with Jean for Friday night. 
+CHG:                                                                             
+
+REF: From the time jack called for her  and all during the afternoon and 
+HYP: From the time Jack called for her, and all during the afternoon and 
+CHG:                                                                     
+
+REF: evening, Jean kept thinking to herself how lucky she was that her father 
+HYP: evening, Jean kept thinking to herself how lucky she was that her father 
+CHG:                                                                          
+
+REF: had moved his store here so she could attend Marian. She was a brand new 
+HYP: had moved his store here so she could attend Marion. She was a brand new 
+CHG:                                              SSSSSSS                     
+
+REF: student  and already she'd won the art contest, made a whole circle of 
+HYP: student, and already she'd won the art contest, made a whole circle of 
+CHG:                                                                        
+
+REF: friends, had been asked to pledge the girls  club. And now here she was out 
+HYP: friends, had been asked to pledge the girls' club, and now here she was out 
+CHG:                                                                             
+
+REF: with the most popular boy in school. But when they drove home, Jean began 
+HYP: with the most popular boy in school. *** When they drove home, Jean began 
+CHG:                                      DDD                                  
+
+REF: to learn a little more about Jack. His popularity had gone to his head. He 
+HYP: to learn a little more about Jack. His popularity had gone to his head. He 
+CHG:                                                                            
+
+REF: was completely sure of himself, confident that none of the girls could 
+HYP: was completely sure of himself, confident that none of the girls could 
+CHG:                                                                        
+
+REF: resist him. Jean's slap didn't hurt his face, but it certainly injured his 
+HYP: resist him. Jean's slap didn't hurt his face, but it certainly injured his 
+CHG:                                                                            
+
+REF: pride. He tried to laugh it off, but he was thinking that he'd have to get 
+HYP: pride. He tried to laugh it off, but he was thinking that he'd have to get 
+CHG:                                                                            
+
+REF: even. Jack didn't lose any time giving the other boys a highly colored 
+HYP: even. Jack didn't lose any time giving the other boys a highly colored 
+CHG:                                                                        
+
+REF: version of the date. To regain his self-confidence and build himself up in 
+HYP: version of the date. To regain his self-confidence and build himself up in 
+CHG:                                                                            
+
+REF: their eyes, he added a few details, remarks about Jean  completely untrue. 
+HYP: their eyes, he added a few details, remarks about Jean, completely untrue, 
+CHG:                                                                            
+
+REF: But then gossip  seldom worry about the truth. Now, the gossip began to 
+HYP: but then gossips seldom worry about the truth. Now  the gossip began to 
+CHG:          SSSSSSS                                                        
+
+REF: spread. Bill Ellis colored it a little more and passed it on. Then 
+HYP: spread. Bill Ellis colored it a little more and passed it on. Then 
+CHG:                                                                    
+
+REF: Christine Manners took over. First, she used her lunch hour to tell the 
+HYP: Christine Manners took over. First  she used her lunch hour to tell the 
+CHG:                                                                         
+
+REF: story to every girl who would listen, and that included practically every 
+HYP: story to every girl who would listen, and That included practically every 
+CHG:                                                                           
+
+REF: girl in the school. When she got home, she took over the telephone to call 
+HYP: girl in the school. When she got home, she took over the telephone to call 
+CHG:                                                                            
+
+REF: all those she'd missed. Yes, gossip spreads like wildfire, especially with 
+HYP: all those she'd missed. Yes, gossip spreads like wildfire, especially with 
+CHG:                                                                            
+
+REF: the help of girls like Christine. And by the end of the day, the harm was 
+HYP: the help of girls like Christine. And by the end of the day, the harm was 
+CHG:                                                                           
+
+REF: done, Jean's reputation was ruined. The next morning, Christine still 
+HYP: done. Jean's reputation was ruined. The next morning, Christine still 
+CHG:                                                                       
+
+REF: wasn't through. She'd been jealous of the new girl's popularity and talent 
+HYP: wasn't through. She'd been jealous of the new girl's popularity and talent 
+CHG:                                                                            
+
+REF: from the start. Now was her chance. But the picture gave Jean her first 
+HYP: from the start. Now was her chance. But the picture gave Jean her first 
+CHG:                                                                         
+
+REF: inkling that something was wrong. She knew it had been torn down 
+HYP: inkling that something was wrong. She knew it had been torn down 
+CHG:                                                                  
+
+REF: deliberately. She asked her friend Janice if she'd done something wrong, 
+HYP: deliberately. She asked her friend Janice if she'd done something wrong, 
+CHG:                                                                          
+
+REF: but Janice was too uncomfortable, embarrassed to tell Jean to her face. 
+HYP: but Janice was too uncomfortable, embarrassed to tell Jean to her face. 
+CHG:                                                                         
+
+REF: Everyone took pains to ignore her. She felt like an outcast, yet couldn't 
+HYP: Everyone took pains to ignore her. She felt like an outcast, yet couldn't 
+CHG:                                                                           
+
+REF: imagine why. Jean was hurt and bewildered. **** Marian High had seemed so 
+HYP: imagine why. Jean was hurt and bewildered. High and    dry  had seemed so 
+CHG:                                            IIII SSSSSS SSSS               
+
+REF: wonderful only last week. Now it was like a completely different school-- 
+HYP: wonderful only last week. Now it was like a completely different school,  
+CHG:                                                                           
+
+REF: gossip. Jean was lonely and miserable all week, but she was still hopeful 
+HYP: gossip. Jean was lonely and miserable all week, but she was still hopeful 
+CHG:                                                                           
+
+REF: that once she was initiated into the girls  club, things would be better. 
+HYP: that once she was initiated into the girls' club, things would be better. 
+CHG:                                                                           
+
+REF: However, Jean had already been blackballed even before the club's scavenger 
+HYP: However, Jean had already been blackballed even before the club   scavenger 
+CHG:                                                            SSSSSS           
+
+REF: hunt had started. But instead of telling her, the club president had made 
+HYP: hunt had started. But instead of telling her, the club president had made 
+CHG:                                                                           
+
+REF: Jean's assignments far more difficult than the other girls, hoping Jean 
+HYP: Jean's assignments far more difficult than the other girls, hoping Jean 
+CHG:                                                                         
+
+REF: would fail, thus disqualifying herself. Not knowing, this  Jean started out 
+HYP: would fail, thus disqualifying herself. Not knowing  this, Jean started out 
+CHG:                                                                             
+
+REF: in the scavenger hunt as eagerly as any of the others. She was willing to 
+HYP: on the scavenger hunt as eagerly as any of the others. She was willing to 
+CHG: SS                                                                        
+
+REF: work twice as hard as the other pledges to be initiated. The rest of the 
+HYP: work twice as hard as the other pledges to be initiated. The rest of the 
+CHG:                                                                          
+
+REF: pledges had finished their assignments and had been notified of their 
+HYP: pledges had finished their assignments and had been notified of their 
+CHG:                                                                       
+
+REF: acceptance before Jean returned. Now, the girls were really embarrassed. 
+HYP: acceptance before Jean returned. Now  the girls were really embarrassed. 
+CHG:                                                                          
+
+REF: Jean came back with every one of her assignments completed. What could she 
+HYP: Jean came back with every one of her assignments completed. What could she 
+CHG:                                                                            
+
+REF: do next? Nothing, Christine told her, she'd been blackballed. She wasn't 
+HYP: do next? Nothing, Christine told her. She'd been blackballed. She wasn't 
+CHG:                                                                          
+
+REF: wanted. Jean couldn't understand. She'd done her assignments as well as any 
+HYP: wanted. Jean couldn't understand. She'd done her assignments as well as any 
+CHG:                                                                             
+
+REF: of them. Why had she been rejected? Christine said Jean knew very well why. 
+HYP: of them. Why had she been rejected? Christine said Jean knew very well why, 
+CHG:                                                                             
+
+REF: Because they didn't want her kind of girl in their club. Jean still didn't 
+HYP: because they didn't want her kind of girl in their club. Jean still didn't 
+CHG:                                                                            
+
+REF: understand. *** Janice finally had to explain that they all knew about her, 
+HYP: understand. The others finally had to explain that they all knew about her, 
+CHG:             III SSSSSS                                                      
+
+REF: about Jack's story. Jean was stunned. How could anybody believe that about 
+HYP: about Jack's story. Jean was stunned. How could anybody believe that about 
+CHG:                                                                            
+
+REF: her? When Mr. And Mrs. Gage came home, Jean told them what had happened, 
+HYP: her? When Mr. and Mrs. Gage came home, Jean told them what had happened, 
+CHG:                                                                          
+
+REF: that she hadn't been accepted by the club because of the gossip about her. 
+HYP: that she hadn't been accepted by the club because of the gossip about her. 
+CHG:                                                                            
+
+REF: She said she was quitting school. So that's the story she told me. That's 
+HYP: She said she was quitting school. So that's the story she told me. That's 
+CHG:                                                                           
+
+REF: why the Gages  came to see me. They agreed with Jean. It would be better if 
+HYP: why the gauges came to see me. They agreed with Jean. It would be better if 
+CHG:         SSSSSS                                                              
+
+REF: she left school. But I asked them to wait, give me a chance to do what I 
+HYP: she left school. But I asked them to wait. Give me a chance to do what I 
+CHG:                                                                          
+
+REF: could. Gossip is difficult to fight. You have to go right to the source and 
+HYP: could. Gossip is difficult to fight. You have to go right to the source and 
+CHG:                                                                             
+
+REF: stamp it out. That's exactly what I did. I called in Jack Monroe, asked him 
+HYP: stamp it out. That's exactly what I did. I called in Jack Monroe, asked him 
+CHG:                                                                             
+
+REF: point blank if he was the gossip. Jack was surprised. He thought only women 
+HYP: point blank if he was the gossip. Jack was surprised. He thought only women 
+CHG:                                                                             
+
+REF: gossip. Men just, well-- realize  the harm it would do. When I had finished 
+HYP: gossip. Men just, well,  realized the harm it would do. When I had finished 
+CHG:                          SSSSSSSS                                           
+
+REF: explaining what his loose talk had done to Jean, Jack asked me what he 
+HYP: explaining what his loose talk had done to Jean, Jack asked me what he 
+CHG:                                                                        
+
+REF: could do, and I told him a way, the only way. He thought it over. It wasn't 
+HYP: could do. And I told him a way, the only way. He thought it over. It wasn't 
+CHG:                                                                             
+
+REF: going to be easy. It would be embarrassing, and we both knew it, but he 
+HYP: going to be easy. It would be embarrassing  and we both knew it. But he 
+CHG:                                                                         
+
+REF: finally agreed. Give Jack credit. He went through with it. His voice broke 
+HYP: finally agreed. Give Jack credit. He went through with it. His voice broke 
+CHG:                                                                            
+
+REF: a few times, but he managed to tell them all that there was nothing to the 
+HYP: a few times, but he managed to tell them all that there was nothing to the 
+CHG:                                                                            
+
+REF: gossip, that he had made up the story, and was to blame for everything. But 
+HYP: gossip, that he had made up the story  and was to blame for everything. But 
+CHG:                                                                             
+
+REF: that wasn't quite right. I told them that anyone who listens to gossip is 
+HYP: that wasn't quite right. I told them that anyone who listens to gossip is 
+CHG:                                                                           
+
+REF: almost as much to blame as the person who spreads it. We were going to 
+HYP: almost as much to blame as the person who spreads it. We were going to 
+CHG:                                                                        
+
+REF: discuss the problem in assembly, make the whole school aware of the danger, 
+HYP: discuss the problem in assembly, make the whole school aware of the danger, 
+CHG:                                                                             
+
+REF: and make sure that no Marian student would ever again be hurt the way Jean 
+HYP: and make sure that no Marion student would ever again be hurt the way Jean 
+CHG:                       SSSSSS                                               
+
+REF: was. The next day, the whole student body realized what they had done to 
+HYP: was. The next day, the whole student body realized what they had done to 
+CHG:                                                                          
+
+REF: Jean. Now they wanted to make it up to her. She made a fresh start, and was 
+HYP: Jean. Now they wanted to make it up to her. She made a fresh start  and was 
+CHG:                                                                             
+
+REF: soon one of Marian's most popular girls, one of our real leaders. What 
+HYP: soon one of Marion's most popular girls, one of our real leaders. What 
+CHG:             SSSSSSSS                                                   
+
+REF: could have been another gossip tragedy had been a happy ending. But don't 
+HYP: could have been another gossip tragedy had been a happy ending. But don't 
+CHG:                                                                           
+
+REF: forget this, there needn't have been so much as a near tragedy if our 
+HYP: forget this, there needn't have been so much as a near tragedy of our 
+CHG:                                                                SS     
+
+REF: students, instead of imitating this bird, the gossipy parrot, had instead 
+HYP: students  instead of imitating this bird. The gossipy parrot  had instead 
+CHG:                                                                           
+
+REF: copied three far wiser creatures, the three little monkeys, who see no 
+HYP: copied three far wiser creatures, the three little monkeys  who see no 
+CHG:                                                                        
+
+REF: evil, hear no evil, and speak no evil. 
+HYP: evil, hear no evil, and speak no evil. 
+CHG:                                        
+
+
+*** gossip-small.json ***
+
+Overall statistics
+WER: 2.37%
+MER: 2.36%
+WIL: 4.09%
+WIP: 95.91%
+
+Edit Statistics
+Hits: 1447
+Substitutions: 26
+Insertions: 8
+Deletions: 1
+
+Hallucinations
+Number of hallucinations: 1
+* Everyone took pains to ignore her.
+
+Dropouts
+Number of dropouts: 0
+
+Edits
+REF: Pretty clever bird, the parrot. He can actually talk, pronounce words. Of 
+HYP: Pretty clever bird  the parrot. He can actually talk, pronounce words. Of 
+CHG:                                                                           
+
+REF: course, he has no idea what the words mean, so we never take him seriously. 
+HYP: course  he has no idea what the words mean  so we never take him seriously. 
+CHG:                                                                             
+
+REF: Unfortunately, that's not true with gossips. They use words just as 
+HYP: Unfortunately  that's not true with gossips. They use words just as 
+CHG:                                                                     
+
+REF: carelessly as the parrot, but sometimes we take them seriously, and often 
+HYP: carelessly as the parrot  but sometimes we take them seriously  and often 
+CHG:                                                                           
+
+REF: innocent persons are harmed. You see, gossips don't stop to think that 
+HYP: innocent persons are harmed. You see  gossips don't stop to think that 
+CHG:                                                                        
+
+REF: words are dangerous. They influence our national life, and in war they are 
+HYP: words are dangerous. They influence our national life  and in war they are 
+CHG:                                                                            
+
+REF: powerful weapons. Gossips toss words around as carelessly as parrots, with 
+HYP: powerful weapons. Gossips toss words around as carelessly as parrots  with 
+CHG:                                                                            
+
+REF: no more sense of the harm they can do. Did I hear somebody say gossiping is 
+HYP: no more sense of the harm they can do. Did I hear somebody say gossiping is 
+CHG:                                                                             
+
+REF: monopolized by women? Far from it. Anyone who uses words carelessly, 
+HYP: monopolized by women? Far from it. Anyone who uses words carelessly  
+CHG:                                                                      
+
+REF: especially to talk behind someone's back, is a gossip. Let me tell you a 
+HYP: especially to talk behind someone's back  is a gossip. Let me tell you a 
+CHG:                                                                          
+
+REF: little story about a gossip. This is Marian High, my school. I'm the 
+HYP: little story about a gossip. This is Marion High, my school  on  the 
+CHG:                                      SSSSSS                  SSS     
+
+REF: principal, George Eastmoor. There were some people in my office this 
+HYP: principle  George Eastmore. There were some people in my office this 
+CHG: SSSSSSSSSS        SSSSSSSSS                                          
+
+REF: particular morning, Mr. And Mrs. Gage and their daughter, Jean. They told 
+HYP: particular morning  Mr. and Mrs. Gage and their daughter  Jean. They told 
+CHG:                                                                           
+
+REF: me Jean would have to leave school. Why? Because of the malicious gossip 
+HYP: me Jean would have to leave school. Why? Because of the malicious gossip 
+CHG:                                                                          
+
+REF: about her. I was shocked, and I asked for details to see if we could do 
+HYP: about her. I was shocked  and I asked for details to see if we could do 
+CHG:                                                                         
+
+REF: something about it. We began talking, even though Jean thought it was 
+HYP: something about it. We began talking  even though Jean thought it was 
+CHG:                                                                       
+
+REF: already too late. Mr. And Mrs. Gage had opened a grocery store at the start 
+HYP: already too late. Mr. and Mrs. Gage had opened a grocery store at the start 
+CHG:                                                                             
+
+REF: of the term, and Jean helped out after school. Usually, it's difficult for 
+HYP: of the term  and Jean helped out after school. Usually  it's difficult for 
+CHG:                                                                            
+
+REF: a boy or girl entering a new school to get acquainted and make friends. But 
+HYP: a boy or girl entering a new school to get acquainted and make friends  but 
+CHG:                                                                             
+
+REF: in Jean's case, it was easy. She's a very good artist. Her first drawing 
+HYP: in Jean's case  it was easy. She's a very good artist. Her first drawing 
+CHG:                                                                          
+
+REF: won a school award, and the prize-winning picture was posted on the 
+HYP: won a school award  and the prize-winning picture was posted on the 
+CHG:                                                                     
+
+REF: bulletin board. That seemed to open the doors for her. All the girls were 
+HYP: bulletin board. That seemed to open the doors for her. All the girls were 
+CHG:                                                                           
+
+REF: interested and anxious to meet her. The first friend she made was Janice 
+HYP: interested and anxious to meet her. The first friend she made was Janice 
+CHG:                                                                          
+
+REF: Nelson. ** Course, Marian High is co-educational, and the other half of our 
+HYP: Nelson. Of course  Marion High is co-educational  and the other half of our 
+CHG:         II         SSSSSS                                                   
+
+REF: student body is always interested in a pretty, popular new girl. So, while 
+HYP: student body is always interested in a pretty  popular new girl. So  while 
+CHG:                                                                            
+
+REF: Jean's new friend Janice Nelson was introducing her to some of the other 
+HYP: Jean's new friend Janice Nelson was introducing her to some of the other 
+CHG:                                                                          
+
+REF: girls, Jack Monroe and Bill Ellis, our two ranking casanovas, were making a 
+HYP: girls, Jack Monroe and Bill Ellis, our two ranking Casanovas, were making a 
+CHG:                                                                             
+
+REF: little bet as to which would make the first date with her. Bill Ellis made 
+HYP: little bet as to which would make the first date with her. Bill Ellis made 
+CHG:                                                                            
+
+REF: the first move. He was waiting on the steps when Janice and Jean left 
+HYP: the first move. He was waiting on the steps when Janice and Jean left 
+CHG:                                                                       
+
+REF: school that afternoon, and soon was off to a running start in the 
+HYP: school that afternoon  and soon was off to a running start in the 
+CHG:                                                                   
+
+REF: competition. Jack wasn't called the best broken field runner in Marian 
+HYP: competition. Jack wasn't called the best broken field runner in Marion 
+CHG:                                                                 SSSSSS 
+
+REF: history for nothing. Besides, he still had some trumps in his hand. Like an 
+HYP: history for nothing. Besides  he still had some trumps in his hand. Like an 
+CHG:                                                                             
+
+REF: open convertible, which had helped quite a few times in the past. Bill 
+HYP: open convertible  which had helped quite a few times in the past. Bill 
+CHG:                                                                        
+
+REF: didn't know it yet, but he was about to be outmaneuvered by an old trick-- 
+HYP: didn't know it yet  but he was about to be outmaneuvered by an old trick,  
+CHG:                                                                            
+
+REF: the fake flat tire. Jack was well on the lead now. He drove twelve blocks 
+HYP: the fake flat tire. Jack was well in the lead now. He drove twelve blocks 
+CHG:                                   SS                                      
+
+REF: out of his way to drop Janice off first. Then he took his time getting Jean 
+HYP: out of his way to drop Janice off first. Then he took his time getting Jean 
+CHG:                                                                             
+
+REF: back to the grocery store. Jean introduced Jack to her mother and father, 
+HYP: back to the grocery store. Jean introduced Jack to her mother and father  
+CHG:                                                                           
+
+REF: and presto, he'd won. He had a date with Jean for Friday night. From the 
+HYP: and presto  he'd won. He had a date with Jean for Friday night. From the 
+CHG:                                                                          
+
+REF: time jack called for her and all during the afternoon and evening, Jean 
+HYP: time Jack called for her and all during the afternoon and evening, Jean 
+CHG:                                                                         
+
+REF: kept thinking to herself how lucky she was that her father had moved his 
+HYP: kept thinking to herself how lucky she was that her father had moved his 
+CHG:                                                                          
+
+REF: store here so she could attend Marian. She was a brand new student and 
+HYP: store here so she could attend Marion. She was a brand new student and 
+CHG:                                SSSSSSS                                 
+
+REF: already she'd won the art contest, made a whole circle of friends, had been 
+HYP: already she'd won the art contest, made a whole circle of friends, had been 
+CHG:                                                                             
+
+REF: asked to pledge the girls club. And now here she was out with the most 
+HYP: asked to pledge the girls club  and now here she was out with the most 
+CHG:                                                                        
+
+REF: popular boy in school. But when they drove home, Jean began to learn a 
+HYP: popular boy in school. But when they drove home  Jean began to learn a 
+CHG:                                                                        
+
+REF: little more about Jack. His popularity had gone to his head. He was 
+HYP: little more about Jack. His popularity had gone to his head. He was 
+CHG:                                                                     
+
+REF: completely sure of himself, confident that none of the girls could resist 
+HYP: completely sure of himself, confident that none of the girls could resist 
+CHG:                                                                           
+
+REF: him. Jean's slap didn't hurt his face, but it certainly injured his pride. 
+HYP: him. Jean's slap didn't hurt his face  but it certainly injured his pride. 
+CHG:                                                                            
+
+REF: He tried to laugh it off, but he was thinking that he'd have to get even. 
+HYP: He tried to laugh it off  but he was thinking that he'd have to get even. 
+CHG:                                                                           
+
+REF: Jack didn't lose any time giving the other boys a highly colored version of 
+HYP: Jack didn't lose any time giving the other boys a highly colored version of 
+CHG:                                                                             
+
+REF: the date. To regain his self-confidence and build himself up in their eyes, 
+HYP: the date. To regain his self-confidence and build himself up in their eyes, 
+CHG:                                                                             
+
+REF: he added a few details, ***** remarks about Jean  completely untrue. But 
+HYP: he added a few details, three marks   about Jean, completely untrue. But 
+CHG:                         IIIII SSSSSSS                                    
+
+REF: then gossip  seldom worry about the truth. Now, the gossip began to spread. 
+HYP: then Gossips seldom worry about the truth. Now  the gossip began to spread. 
+CHG:      SSSSSSS                                                                
+
+REF: Bill Ellis colored it a little more and passed it on. Then Christine 
+HYP: Bill Ellis colored it a little more and passed it on. Then Christine 
+CHG:                                                                      
+
+REF: Manners took over. First, she used her lunch hour to tell the story to 
+HYP: Manners took over. First  she used her lunch hour to tell the story to 
+CHG:                                                                        
+
+REF: every girl who would listen,  and that included practically every girl in 
+HYP: every girl who had   listened and that included practically every girl in 
+CHG:                SSSSS SSSSSSSS                                             
+
+REF: the school. When she got home, she took over the telephone to call all 
+HYP: the school. When she got home  she took over the telephone to call all 
+CHG:                                                                        
+
+REF: those she'd missed. Yes, gossip  spreads like wildfire, especially with the 
+HYP: those she'd missed. Yes, Gossips spreads like wildfire  especially with the 
+CHG:                          SSSSSSS                                            
+
+REF: help of girls like Christine. And by the end of the day, the harm was done, 
+HYP: help of girls like Christine. And by the end of the day  the harm was done. 
+CHG:                                                                             
+
+REF: Jean's reputation was ruined. The next morning, Christine still wasn't 
+HYP: Jean's reputation was ruined. The next morning  Christine still wasn't 
+CHG:                                                                        
+
+REF: through. She'd been jealous of the new girl's popularity and talent from 
+HYP: through. She'd been jealous of the new girl's popularity and talent from 
+CHG:                                                                          
+
+REF: the start. Now was her chance. But the picture gave Jean her first inkling 
+HYP: the start. Now was her chance. But the picture gave Jean her first inkling 
+CHG:                                                                            
+
+REF: that something was wrong. She knew it had been torn down deliberately. She 
+HYP: that something was wrong. She knew it had been torn down deliberately. She 
+CHG:                                                                            
+
+REF: asked her friend  Janice  if she'd done something wrong, but Janice was too 
+HYP: asked a   friend, Janice, if she'd done something wrong. But Janice was too 
+CHG:       SSS                                                                   
+
+REF: uncomfortable, embarrassed to tell Jean to her face. Everyone took pains to 
+HYP: uncomfortable, embarrassed to tell Jean to her face. Everyone took pains to 
+CHG:                                                                             
+
+REF: ignore her. ******** **** ***** ** ****** **** She felt like an outcast, 
+HYP: ignore her. Everyone took pains to ignore her. She felt like an outcast, 
+CHG:             IIIIIIII IIII IIIII II IIIIII IIII                           
+
+REF: yet couldn't imagine why. Jean was hurt and bewildered. Marian High had 
+HYP: yet couldn't imagine why. Jean was hurt and bewildered. Marion High had 
+CHG:                                                         SSSSSS          
+
+REF: seemed so wonderful only last week. Now it was like a completely different 
+HYP: seemed so wonderful only last week. Now it was like a completely different 
+CHG:                                                                            
+
+REF: school-- gossip. Jean was lonely and miserable all week, but she was still 
+HYP: school.  Gossip. Jean was lonely and miserable all week, but she was still 
+CHG:                                                                            
+
+REF: hopeful that once she was initiated into the girls  club, things would be 
+HYP: hopeful that once she was initiated into the girl's club  things would be 
+CHG:                                              SSSSSS                       
+
+REF: better. However, Jean had already been blackballed even before the club's 
+HYP: better. However, Jean had already been blackballed even before the club   
+CHG:                                                                    SSSSSS 
+
+REF: scavenger hunt had started. But instead of telling her, the club president 
+HYP: scavenger hut  had started. But instead of telling her  the club president 
+CHG:           SSSS                                                             
+
+REF: had made Jean's assignments far more difficult than the other girls, hoping 
+HYP: had made Jean's assignments far more difficult than the other girls, hoping 
+CHG:                                                                             
+
+REF: Jean would fail, thus disqualifying herself. Not knowing, this  Jean 
+HYP: Jean would fail, thus disqualifying herself. Not knowing  this, Jean 
+CHG:                                                                      
+
+REF: started out in the scavenger hunt as eagerly as any of the others. She was 
+HYP: started out on the scavenger hunt as eagerly as any of the others. She was 
+CHG:             SS                                                             
+
+REF: willing to work twice as hard as the other pledges to be initiated. The 
+HYP: willing to work twice as hard as the other pledges to be initiated. The 
+CHG:                                                                         
+
+REF: rest of the pledges had finished their assignments and had been notified of 
+HYP: rest of the pledges had finished their assignments and had been notified of 
+CHG:                                                                             
+
+REF: their acceptance before Jean returned. Now, the girls were really 
+HYP: their acceptance before Jean returned. Now  the girls were really 
+CHG:                                                                   
+
+REF: embarrassed. Jean came back with every one of her assignments completed. 
+HYP: embarrassed. Jean came back with every one of her assignments completed. 
+CHG:                                                                          
+
+REF: What could she do next? Nothing, Christine told her, she'd been 
+HYP: What could she do next? Nothing, Christine told her, she'd been 
+CHG:                                                                 
+
+REF: blackballed. She wasn't wanted. Jean couldn't understand. She'd done her 
+HYP: blackballed. She wasn't wanted. Jean couldn't understand. She'd done her 
+CHG:                                                                          
+
+REF: assignments as well as any of them. Why had she been rejected? Christine 
+HYP: assignments as well as any of them. Why had she been rejected? Christine 
+CHG:                                                                          
+
+REF: said Jean knew very well why. Because they didn't want her kind of girl in 
+HYP: said Jean knew very well why, because they didn't want her kind of girl in 
+CHG:                                                                            
+
+REF: their club. Jean still didn't understand. Janice finally had to explain 
+HYP: their club. Jean still didn't understand. Janice finally had to explain 
+CHG:                                                                         
+
+REF: that they all knew about her, about Jack's story. Jean was stunned. How 
+HYP: that they all knew about her, about Jack's story. Jean was stunned. How 
+CHG:                                                                         
+
+REF: could anybody believe that about her? When Mr. And Mrs. Gage came home, 
+HYP: could anybody believe that about her? When Mr. and Mrs. Gage came home, 
+CHG:                                                                         
+
+REF: Jean told them what had happened, that she hadn't been accepted by the club 
+HYP: Jean told them what had happened, that she hadn't been accepted by the club 
+CHG:                                                                             
+
+REF: because of the gossip about her. She said she was quitting school. So 
+HYP: because of a   gossip about her. She said she was quitting school. So 
+CHG:            SSS                                                        
+
+REF: that's the story she told me. That's why the Gages  came to see me. They 
+HYP: that's the story she told me. That's why the gauges came to see me. They 
+CHG:                                              SSSSSS                      
+
+REF: agreed with Jean. It would be better if she left school. But I asked them 
+HYP: agreed with Jean, it would be better if she left school. But I asked them 
+CHG:                                                                           
+
+REF: to wait, give me a chance to do what I could. Gossip is difficult to fight. 
+HYP: to wait, give me a chance to do what I could. Gossip is difficult to fight. 
+CHG:                                                                             
+
+REF: You have to go right to the source and stamp it out. That's exactly what I 
+HYP: You have to go right to the source and stamp it out. That's exactly what I 
+CHG:                                                                            
+
+REF: did. I called in Jack Monroe, asked him point blank if he was the gossip. 
+HYP: did. I called in Jack Monroe, asked him point blank if he was the gossip. 
+CHG:                                                                           
+
+REF: Jack was surprised. He thought only women gossip. Men just, well-- realize  
+HYP: Jack was surprised. He thought only women gossip. Men just, well,  realized 
+CHG:                                                                    SSSSSSSS 
+
+REF: the harm it would do. When I had finished explaining what his loose talk 
+HYP: the harm it would do. When I had finished explaining what his loose talk 
+CHG:                                                                          
+
+REF: had done to Jean, Jack asked me what he could do, and I told him a     way, 
+HYP: had done to Jean, Jack asked me what he could do. And I told him away, **** 
+CHG:                                                                  SSSSS DDDD 
+
+REF: the only way. He thought it over. It wasn't going to be easy. It would be 
+HYP: the only way. He thought it over. It wasn't going to be easy. It would be 
+CHG:                                                                           
+
+REF: embarrassing, and we both knew it, but he finally agreed. Give Jack credit. 
+HYP: embarrassing  and we both knew it. But he finally agreed. Give Jack credit. 
+CHG:                                                                             
+
+REF: He went through with it. His voice broke a few times, but he managed to 
+HYP: He went through with it. His voice broke a few times, but he managed to 
+CHG:                                                                         
+
+REF: tell them all that there was nothing to the gossip, that he had made up the 
+HYP: tell them all that there was nothing to the gossip, that he had made up the 
+CHG:                                                                             
+
+REF: story, and was to blame for everything. But that wasn't quite right. I told 
+HYP: story  and was to blame for everything. But that wasn't quite right. I told 
+CHG:                                                                             
+
+REF: them that anyone who listens to gossip is almost as much to blame as the 
+HYP: them that anyone who listens to gossip is almost as much to blame as the 
+CHG:                                                                          
+
+REF: person who spreads it. We were going to discuss the problem in assembly, 
+HYP: person who spreads it. We were going to discuss the problem in assembly. 
+CHG:                                                                          
+
+REF: make the whole school aware of the danger, and make sure that no Marian 
+HYP: Make the whole school aware of the danger  and make sure that no Marion 
+CHG:                                                                  SSSSSS 
+
+REF: student would ever again be hurt the way Jean was. The next day, the whole 
+HYP: student would ever again be hurt the way Jean was. The next day, the whole 
+CHG:                                                                            
+
+REF: student body realized what they had done to Jean. Now they wanted to make 
+HYP: student body realized what they had done to Jean. Now they wanted to make 
+CHG:                                                                           
+
+REF: it up to her. She made a fresh start, and was soon one of Marian's most 
+HYP: it up to her. She made a fresh start  and was soon one of Marion's most 
+CHG:                                                           SSSSSSSS      
+
+REF: popular girls, one of our real leaders. What could have been another gossip 
+HYP: popular girls, one of our real leaders. What could have been another gossip 
+CHG:                                                                             
+
+REF: tragedy had been a happy ending. But don't forget this, there needn't have 
+HYP: tragedy had been a happy ending? But don't forget this, there needn't have 
+CHG:                                                                            
+
+REF: been so much as a near tragedy if our students, instead of imitating this 
+HYP: been so much as a near tragedy of our students  instead of imitating this 
+CHG:                                SS                                         
+
+REF: bird, the gossipy parrot, had instead copied three far wiser creatures, the 
+HYP: bird. The gossipy parrot  had instead copied three far wiser creatures, the 
+CHG:                                                                             
+
+REF: three little monkeys, who see no evil, hear no evil, and speak no evil. 
+HYP: three little monkeys, who see no evil, hear no evil, and speak no evil. 
+CHG:                                                                         
+
+

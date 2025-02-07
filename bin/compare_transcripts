@@ -21,6 +21,7 @@ def main():
     parser.add_argument('--html-insert-class', default='insert', help='CSS class to use for insert text')
     parser.add_argument('--html-delete-class', default='delete', help='CSS class to use for deleted text')
     parser.add_argument('--html-one-edit', default=False, action='store_true', help="don't split the text for readability")
+    parser.add_argument('--text-template', type=Path, default=None, help="Text output template")
     parser.add_argument('--text-width', default=75, help="Width for fixed width text output")
     parser.add_argument('--text-differences', default=False, action='store_true', help="Only show the edit differences in text output")
     parser.add_argument('--start-hallucination-length', type=int, default=2, help="Hallucination length at the start of the transcript")
@@ -160,8 +161,8 @@ def main():
             
 
     elif args.output_format == 'txt' or outfile.suffix == '.txt':
-        if args.html_template is None:
-            args.html_template = Path(sys.path[0], "../templates/default_compare_txt_template.jinja2")        
+        if args.text_template is None:
+            args.text_template = Path(sys.path[0], "../templates/default_compare_txt_template.jinja2")        
         environment = Environment(loader=FileSystemLoader(args.html_template.parent))
         template = environment.get_template(args.html_template.name)
         with open(args.output, "w") as f:
