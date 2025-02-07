@@ -49,7 +49,9 @@ class Compare:
 
     def edit_statistics(self) -> dict[str, float]:
         """Edit Statistics"""
-        return {'hits': self.comp['hits'],
+        return {'ref_words': len(self.ref_words),
+                'hyp_words': len(self.hyp_words),
+                'hits': self.comp['hits'],
                 'substitutions': self.comp['substitutions'],
                 'insertions': self.comp['insertions'],
                 'deletions': self.comp['deletions']}

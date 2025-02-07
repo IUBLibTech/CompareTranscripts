@@ -7,7 +7,7 @@ The original text has a total of {{ sentence_count }} sentences.
 *** {{ h }} ***
 
 Overall statistics
-{% for s in ('wer', 'mer', 'wil', 'wip') -%}
+{% for s in ('wer', 'mer', 'wil', 'wip', 'wer-no-hallucinations') -%}
 {{ s | upper }}: {{ "%0.2f"|format(hyp[h].statistics[s] * 100) }}%
 {% endfor %}
 Edit Statistics

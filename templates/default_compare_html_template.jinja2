@@ -67,6 +67,14 @@
                     {% endfor %}
                 </tr>
                 <tr valign="top">
+                    <td>WER-no-hallucinations</td>
+                    {% for h in hyp.values() %}
+                    <td class="ralign">
+                        {{ "%0.02f"|format(h.statistics['wer-no-hallucinations'] * 100) }}%
+                    </td>
+                    {% endfor %}
+                </tr>                
+                <tr valign="top">
                     <td></td>
                     {% for h in hyp.values() %}
                     <td>

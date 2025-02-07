@@ -97,7 +97,7 @@ def main():
                                      end_length=args.end_hallucination_length,
                                      end_ratio=args.end_hallucination_ratio):
             hwords = [x.hyp if args.comparison_words else x.hypword for x in h['edits']]            
-            hallucinations.append({'start': h['start'], 'words': ' '.join(hwords)})
+            hallucinations.append({'start': h['start'], 'word_count': len(hwords), 'words': ' '.join(hwords)})
         
 
         dropouts = []
@@ -109,8 +109,7 @@ def main():
                                      end_length=args.end_dropout_length,
                                      end_ratio=args.end_dropout_ratio):
             dwords = [x.ref if args.comparison_words else x.refword for x in d['edits']]            
-            dropouts.append({'start': d['start'], 'words': ' '.join(dwords)})        
-
+            dropouts.append({'start': d['start'], 'word_count': len(dwords), 'words': ' '.join(dwords)})        
 
         results['hyp'][hypname.name] = {
             'statistics': cmp.statistics(),
@@ -127,6 +126,15 @@ def main():
             'hallucinations': hallucinations,
             'dropouts': dropouts,
         }
+
+        # append a WER to the statistics which doesn't include the hallucinations.        
+        hallucination_edit_count = sum([h['word_count'] for h in results['hyp'][hypname.name]['hallucinations']])
+        #for h in results['hyp'][hypname.name]['hallucinations']:            
+        #    hallucination_edit_count += h['word_count']
+        es = results['hyp'][hypname.name]['edit_statistics']
+        no_hallucinations_wer = ((es['substitutions'] + es['deletions'] + es['insertions']) - hallucination_edit_count )/ es['ref_words']
+        results['hyp'][hypname.name]['statistics']['wer-no-hallucinations'] = no_hallucinations_wer
+        #print(f"{hallucination_edit_count} {100 * results['hyp'][hypname.name]['statistics']['wer']:0.2f}, {100 * no_hallucination_wer:0.2f}")
 
         results['sentence_count'] = len(results['hyp'][hypname.name]['edits'])
 
@@ -147,6 +155,7 @@ def main():
                           'MER': hdata['statistics']['mer'],
                           'WIL': hdata['statistics']['wil'],
                           'WIP': hdata['statistics']['wip'],
+                          'WER-No-Hallucinations': hdata['statistics']['wer-no-hallucinations'],
                           'Hits': hdata['edit_statistics']['hits'],
                           'Substitutions': hdata['edit_statistics']['substitutions'],
                           'Insertions': hdata['edit_statistics']['insertions'],
@@ -161,10 +170,12 @@ def main():
             
 
     elif args.output_format == 'txt' or outfile.suffix == '.txt':
+        print(args.text_template)        
         if args.text_template is None:
-            args.text_template = Path(sys.path[0], "../templates/default_compare_txt_template.jinja2")        
-        environment = Environment(loader=FileSystemLoader(args.html_template.parent))
-        template = environment.get_template(args.html_template.name)
+            args.text_template = Path(sys.path[0], "../templates/default_compare_txt_template.jinja2")
+        print(args.text_template)        
+        environment = Environment(loader=FileSystemLoader(args.text_template.parent))
+        template = environment.get_template(args.text_template.name)
         with open(args.output, "w") as f:
             f.write(template.render(results))
 
