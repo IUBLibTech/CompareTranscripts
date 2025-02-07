@@ -1,6 +1,7 @@
 #!/bin/env python3
 import activate_venv
 import argparse
+import csv
 from jinja2 import Environment, FileSystemLoader
 import logging
 from pathlib import Path
@@ -10,7 +11,7 @@ from transcript.transcript import Transcript
 from transcript.compare import Compare
 from transcript.render import fixed_width_text, html_difference
 from transcript.filters import strip_case, remove_punctuation, remove_numeric_commas
-from transcript.transforms import numbers_to_words
+from transcript.transforms import numbers_to_words, currency
 from transcript.analyze import find_hallucinations, find_dropouts
 
 def main():
@@ -20,6 +21,8 @@ def main():
     parser.add_argument('--html-insert-class', default='insert', help='CSS class to use for insert text')
     parser.add_argument('--html-delete-class', default='delete', help='CSS class to use for deleted text')
     parser.add_argument('--html-one-edit', default=False, action='store_true', help="don't split the text for readability")
+    parser.add_argument('--text-width', default=75, help="Width for fixed width text output")
+    parser.add_argument('--text-differences', default=False, action='store_true', help="Only show the edit differences in text output")
     parser.add_argument('--start-hallucination-length', type=int, default=2, help="Hallucination length at the start of the transcript")
     parser.add_argument('--start-hallucination-ratio', type=float, default=1.0, help="Ratio of inserts to total length of hallucination at the start of the transcript")
     parser.add_argument('--mid-hallucination-length', type=int, default=4, help="Hallucination length int he middle of the transcript")
@@ -39,10 +42,12 @@ def main():
     parser.add_argument('--dropout-ratio', type=float, default=None, help="Set all of the dropout ratios")
 
     parser.add_argument('--output', required=True, type=Path, help="Output file")
+    parser.add_argument('--output-format', default=None, choices=['html', 'txt', 'csv'], help="Output format (default guess from extension, html, txt, or csv)")
     parser.add_argument('--comparison-words', default=False, action='store_true', help="Show comparison words instead of original words")
     parser.add_argument('reference', type=Path, help='Reference transcript')
     parser.add_argument('hypothesis', nargs='+', type=Path, help='Hypothesis transcript(s)')
 
+    invocation_args = " ".join(sys.argv)
     args = parser.parse_args()
 
     logging.basicConfig(level=logging.DEBUG if args.debug else logging.INFO,
@@ -70,7 +75,8 @@ def main():
     ref_words = ref.get_words()
     results = {
         'title': f'Comparison against {args.reference.name}',
-        'hyp': {}
+        'hyp': {},
+        'arguments': invocation_args,
     }
 
     for hypname in args.hypothesis:
@@ -78,7 +84,7 @@ def main():
         hyp_words = hyp.get_words()
 
         cmp = Compare(ref_words, hyp_words, 
-                    transforms=[numbers_to_words],
+                    transforms=[numbers_to_words, currency],
                     filters=[strip_case, remove_punctuation, remove_numeric_commas])    
 
         hallucinations = []
@@ -113,30 +119,53 @@ def main():
                                      split_sentences=not args.html_one_edit,
                                      insert_class=args.html_insert_class,
                                      delete_class=args.html_delete_class).split('<p>'),
+            'text_edits': fixed_width_text(cmp.edits(),
+                                           width=args.text_width,
+                                           original_words=not args.comparison_words,
+                                           only_differences=args.text_differences),
             'hallucinations': hallucinations,
             'dropouts': dropouts,
         }
 
         results['sentence_count'] = len(results['hyp'][hypname.name]['edits'])
 
+    outfile: Path = args.output
+    if args.output_format == 'html' or outfile.suffix == '.html':
+        if args.html_template is None:
+            args.html_template = Path(sys.path[0], "../templates/default_compare_html_template.jinja2")        
+        environment = Environment(loader=FileSystemLoader(args.html_template.parent))
+        template = environment.get_template(args.html_template.name)
+        with open(args.output, "w") as f:
+            f.write(template.render(results))
+    elif args.output_format == 'csv' or outfile.suffix == '.csv':
+        # restructure the content so it's tabular.
+        sheet: list[dict] = []
+        for hypname, hdata in results['hyp'].items():
+            sheet.append({'Name': hypname,
+                          'WER': hdata['statistics']['wer'],
+                          'MER': hdata['statistics']['mer'],
+                          'WIL': hdata['statistics']['wil'],
+                          'WIP': hdata['statistics']['wip'],
+                          'Hits': hdata['edit_statistics']['hits'],
+                          'Substitutions': hdata['edit_statistics']['substitutions'],
+                          'Insertions': hdata['edit_statistics']['insertions'],
+                          'Deletions': hdata['edit_statistics']['deletions'],
+                          'Hallucinations': len(hdata['hallucinations']),
+                          'Dropouts': len(hdata['dropouts'])}                          
+                          )
+        with open(args.output, 'w', newline='') as f:            
+            writer = csv.DictWriter(f, fieldnames=list(sheet[0].keys()))
+            writer.writeheader()
+            writer.writerows(sheet)
+            
 
-
-
-        #print(cmp.edit_statistics())
-        #print(cmp.statistics())
-        #print(fixed_width_text(cmp.edits(), original_words=True))
-
-
-    if args.html_template is None:
-        args.html_template = Path(sys.path[0], "../templates/default_compare_template.jinja2")        
-    environment = Environment(loader=FileSystemLoader(args.html_template.parent))
-    template = environment.get_template(args.html_template.name)
-
-    with open(args.output, "w") as f:
-        f.write(template.render(results))
-
-
-
+    elif args.output_format == 'txt' or outfile.suffix == '.txt':
+        if args.html_template is None:
+            args.html_template = Path(sys.path[0], "../templates/default_compare_txt_template.jinja2")        
+        environment = Environment(loader=FileSystemLoader(args.html_template.parent))
+        template = environment.get_template(args.html_template.name)
+        with open(args.output, "w") as f:
+            f.write(template.render(results))
 
 
 if __name__ == "__main__":

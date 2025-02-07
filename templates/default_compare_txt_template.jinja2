@@ -1,0 +1,30 @@
+{{ title }}
+
+Comparison was run with these arguments: {{ arguments }}
+The original text has a total of {{ sentence_count }} sentences.
+
+{% for h in hyp -%}
+*** {{ h }} ***
+
+Overall statistics
+{% for s in ('wer', 'mer', 'wil', 'wip') -%}
+{{ s | upper }}: {{ "%0.2f"|format(hyp[h].statistics[s] * 100) }}%
+{% endfor %}
+Edit Statistics
+{% for s in ('hits', 'substitutions', 'insertions', 'deletions') -%}
+{{ s |capitalize}}: {{ hyp[h].edit_statistics[s] }}
+{% endfor %}
+Hallucinations
+Number of hallucinations: {{ hyp[h].hallucinations | length }}
+{% for x in hyp[h].hallucinations -%}
+* {{ x.words }}
+{% endfor %}
+Dropouts
+Number of dropouts: {{ hyp[h].dropouts | length }}
+{% for x in hyp[h].dropouts -%}
+* {{ x.words }}
+{% endfor %}
+Edits
+{{ hyp[h].text_edits }}
+
+{% endfor -%}

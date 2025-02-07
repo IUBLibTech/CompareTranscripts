@@ -14,14 +14,17 @@ class Transcript:
     @staticmethod
     def load_file(file: Path) -> 'Transcript':
         """Load a transcript file"""
-        for xscript_class in (ThreePlayTranscript, WhisperTranscript, TextTranscript):
+        for xscript_class in (ThreePlayTranscript, WhisperTranscript, VTTTranscript, TextTranscript):
             try:
                 t = xscript_class(file)         
                 t.metadata['transcript_file'] = file.name
                 return t
-            except Exception as e:
+            except KeyError as e:
                 logging.debug(f"Cannot load {file} as a {type(xscript_class)}: {e}")
-        
+            except Exception as e:
+                logging.exception(f"Cannot load {file} as a {type(xscript_class)}: {e}")
+
+
         raise Exception("Cannot determine what kind of transcript this is!")                
 
 
@@ -69,8 +72,12 @@ class WhisperTranscript(Transcript):
     """
     def __init__(self, file: Path):
         super().__init__()
-        with open(file) as f:
-            data = yaml.safe_load(f)
+        try:
+            with open(file) as f:
+                data = yaml.safe_load(f)
+        except Exception as e:
+            raise KeyError(e)
+        
         for k, dt in (('text', str), 
                       ('segments', list),
                       ('language', str)):
@@ -119,8 +126,12 @@ class ThreePlayTranscript(Transcript):
     """
     def __init__(self, file: Path):
         super().__init__()
-        with open(file) as f:
-            data = json.load(f)
+        try:
+            with open(file) as f:
+                data = json.load(f)
+        except Exception as e:
+            raise KeyError(e)
+        
         for k, dt in (('words', list), 
                       ('paragraphs', list),
                       ('speakers', dict)):
@@ -155,3 +166,46 @@ class ThreePlayTranscript(Transcript):
                 words.append(w)
         return words
         
+
+class VTTTranscript(Transcript):
+    """Load a VTT file.  At least simple ones.
+    
+    Should start with WEBVTT, a blank line, and then a set of
+    cues.  Each cue is terminated by two or more newlines or end of file.
+    """
+    def __init__(self, file: Path):
+        super().__init__()
+        vtt = file.read_text()
+        if not vtt.startswith("WEBVTT"):
+            raise KeyError(f"Not a WebVTT transcript")
+
+        text = ''
+        for cue in re.split(r'\n\n+', vtt):
+            if cue.startswith("WEBVTT") or cue.startswith("NOTE"):
+                # magic or metadata
+                continue
+            in_text = False
+            for line in cue.splitlines():
+                if not in_text and re.match(r'\d+:\d+.+\s+-->\s+\d+:\d+:', line):
+                    in_text = True
+                else:
+                    # we need to filter some things from the line...
+                    line = re.sub(r'</?[vbi].*?>', '', line)          
+                    text += line + "\n"    
+
+        self.data = text
+
+
+    def get_words(self, 
+                  strip_meta: bool=True, 
+                  strip_speaker: bool=True) -> list[str]:
+        words = []
+        for line in self.data.splitlines():
+            if strip_speaker:
+                line = re.sub(r'^[A-Z ]+:', ' ', line)
+            if strip_meta:                
+                line = re.sub(r'\[.*?\]', ' ', line)
+            words.extend(line.split())
+        return words
+
+
