@@ -170,10 +170,8 @@ def main():
             
 
     elif args.output_format == 'txt' or outfile.suffix == '.txt':
-        print(args.text_template)        
         if args.text_template is None:
             args.text_template = Path(sys.path[0], "../templates/default_compare_txt_template.jinja2")
-        print(args.text_template)        
         environment = Environment(loader=FileSystemLoader(args.text_template.parent))
         template = environment.get_template(args.text_template.name)
         with open(args.output, "w") as f:
