@@ -11,7 +11,7 @@ from transcript.transcript import Transcript
 from transcript.compare import Compare
 from transcript.render import fixed_width_text, html_difference
 from transcript.filters import strip_case, remove_punctuation, remove_numeric_commas
-from transcript.transforms import numbers_to_words, currency
+from transcript.transforms import numbers_to_words, currency, dehyphenate, okay, ampersands
 from transcript.analyze import find_hallucinations, find_dropouts
 
 def main():
@@ -34,17 +34,17 @@ def main():
     parser.add_argument('--hallucination-ratio', type=float, default=None, help="Set all of the hallucination ratios")
 
     parser.add_argument('--start-dropout-length', type=int, default=2, help="dropout length at the start of the transcript")
-    parser.add_argument('--start-dropout-ratio', type=float, default=1.0, help="Ratio of inserts to total length of dropout at the start of the transcript")
+    parser.add_argument('--start-dropout-ratio', type=float, default=0.75, help="Ratio of inserts to total length of dropout at the start of the transcript")
     parser.add_argument('--mid-dropout-length', type=int, default=4, help="dropout length int he middle of the transcript")
-    parser.add_argument('--mid-dropout-ratio', type=float, default=1.0, help="Ratio of inserts to total length of dropout in the middle of the transcript")
+    parser.add_argument('--mid-dropout-ratio', type=float, default=0.75, help="Ratio of inserts to total length of dropout in the middle of the transcript")
     parser.add_argument('--end-dropout-length', type=int, default=4, help="dropout length at the end of the transcript")
-    parser.add_argument('--end-dropout-ratio', type=float, default=1.0, help="Ratio of inserts to total length of dropout at the end of the transcript")
+    parser.add_argument('--end-dropout-ratio', type=float, default=0.75, help="Ratio of inserts to total length of dropout at the end of the transcript")
     parser.add_argument('--dropout-length', type=int, default=None, help="Set all of the dropout lengths")
     parser.add_argument('--dropout-ratio', type=float, default=None, help="Set all of the dropout ratios")
 
     parser.add_argument('--output', required=True, type=Path, help="Output file")
     parser.add_argument('--output-format', default=None, choices=['html', 'txt', 'csv'], help="Output format (default guess from extension, html, txt, or csv)")
-    parser.add_argument('--comparison-words', default=False, action='store_true', help="Show comparison words instead of original words")
+    parser.add_argument('--original-words', default=False, action='store_true', help="Show the original words instead of the comparison words")
     parser.add_argument('reference', type=Path, help='Reference transcript')
     parser.add_argument('hypothesis', nargs='+', type=Path, help='Hypothesis transcript(s)')
 
@@ -85,7 +85,7 @@ def main():
         hyp_words = hyp.get_words()
 
         cmp = Compare(ref_words, hyp_words, 
-                    transforms=[numbers_to_words, currency],
+                    transforms=[dehyphenate, currency, numbers_to_words, okay, ampersands],
                     filters=[strip_case, remove_punctuation, remove_numeric_commas])    
 
         hallucinations = []
@@ -96,7 +96,7 @@ def main():
                                      mid_ratio=args.mid_hallucination_ratio,
                                      end_length=args.end_hallucination_length,
                                      end_ratio=args.end_hallucination_ratio):
-            hwords = [x.hyp if args.comparison_words else x.hypword for x in h['edits']]            
+            hwords = [x.hyp if not args.original_words else x.hypword for x in h['edits']]            
             hallucinations.append({'start': h['start'], 'word_count': len(hwords), 'words': ' '.join(hwords)})
         
 
@@ -108,20 +108,20 @@ def main():
                                      mid_ratio=args.mid_dropout_ratio,
                                      end_length=args.end_dropout_length,
                                      end_ratio=args.end_dropout_ratio):
-            dwords = [x.ref if args.comparison_words else x.refword for x in d['edits']]            
+            dwords = [x.ref if not args.original_words else x.refword for x in d['edits']]            
             dropouts.append({'start': d['start'], 'word_count': len(dwords), 'words': ' '.join(dwords)})        
 
         results['hyp'][hypname.name] = {
             'statistics': cmp.statistics(),
             'edit_statistics': cmp.edit_statistics(),
             'edits': html_difference(cmp.edits(), 
-                                     original_words=not args.comparison_words,
+                                     original_words=args.original_words,
                                      split_sentences=not args.html_one_edit,
                                      insert_class=args.html_insert_class,
                                      delete_class=args.html_delete_class).split('<p>'),
             'text_edits': fixed_width_text(cmp.edits(),
                                            width=args.text_width,
-                                           original_words=not args.comparison_words,
+                                           original_words=args.original_words,
                                            only_differences=args.text_differences),
             'hallucinations': hallucinations,
             'dropouts': dropouts,

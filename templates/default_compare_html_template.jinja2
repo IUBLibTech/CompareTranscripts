@@ -21,6 +21,9 @@
                 border-right: solid 1px #000; 
                 border-left: solid 1px #000;
             }
+            .toprow {
+                border-top: solid 1px #000;
+            }
 
         </style>
         <title>{{ title }}</title>
@@ -65,7 +68,7 @@
                 {% endfor %}
                 
                 <!-- hallucinations -->
-                <tr valign="top">
+                <tr valign="top" class="toprow">
                     <td>Hallucinations</td>
                     {% for h in hyp.values() %}
                     <td class="ralign">
@@ -95,7 +98,7 @@
                 </tr>
 
                 <!-- Dropouts -->
-                <tr valign="top">
+                <tr valign="top" class="toprow">
                     <td>Dropouts</td>
                     {% for h in hyp.values() %}
                     <td class="ralign">
@@ -119,7 +122,7 @@
 
                 <!-- edits -->                
                 {% for i in range(sentence_count) %}
-                    <tr valign="top">
+                    <tr valign="top" class="{{"toprow" if i == 0 else ""}}">
                     <td>{{ "Edits" if i == 0 else "" }}</td>
                 {% for h in hyp.values() %}
                     <td>{{ h.edits[i] }}</td>

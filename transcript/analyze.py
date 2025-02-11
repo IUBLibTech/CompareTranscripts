@@ -1,5 +1,5 @@
 from transcript.compare import WordEdit
-
+import logging
 
 def find_hallucinations(edits: list[WordEdit],
                         start_length: int=2, start_ratio: float=1.0,
@@ -41,41 +41,43 @@ def find_runs(primary_edit: str, edits: list[WordEdit],
     results = []
     # first find the number of inserts or at the beginning of the transcripts.
     current = 0
-    in_hallucination = False
-    hallucination_start = 0
+    in_run = False
+    run_start = 0
     for current, ed in enumerate(edits):
-        if not in_hallucination:
+        if not in_run:
             if ed.edit == primary_edit:
                 # back up until there's an edit that isn't a substitution.
-                hallucination_start = current
-                in_hallucination = True
-                while edits[hallucination_start - 1].edit in allowed_edits:
-                    hallucination_start -= 1
-                    if hallucination_start == -1:
-                        hallucination_start = 0
+                run_start = current
+                in_run = True
+                while edits[run_start - 1].edit in allowed_edits:
+                    run_start -= 1
+                    if run_start == -1:
+                        run_start = 0
                         break                
         else:
             if ed.edit not in all_edits or current == len(edits) - 1:
                 # this is the end of the hallucination.
-                in_hallucination = False
-                this_hallucination = [x for x in edits[hallucination_start:current]]                
+                in_run = False
+                this_run = [x for x in edits[run_start:current]]                
                 
-                if hallucination_start == 0:
+                if run_start == 0:
                     # use the start parameters
                     exp_ratio = start_ratio
-                    exp_threshold = start_length
+                    exp_len = start_length
                 elif current == len(edits) - 1:
                     # use the end parameters.
                     exp_ratio = end_ratio
-                    exp_threshold = end_length
+                    exp_len = end_length
                 else:
                     exp_ratio = mid_ratio
-                    exp_threshold = mid_length
+                    exp_len = mid_length
 
-                if len(this_hallucination) >= exp_threshold:                    
-                    insert_count = sum([1 for x in this_hallucination if x.edit == primary_edit])
-                    ratio = insert_count / len(this_hallucination)
+                if len(this_run) >= exp_len:                    
+                    insert_count = sum([1 for x in this_run if x.edit == primary_edit])
+                    ratio = insert_count / len(this_run)
                     if ratio >= exp_ratio:
-                        results.append({'start': hallucination_start, 'edits': this_hallucination})
+                        results.append({'start': run_start, 'edits': this_run})
+                    else:
+                        logging.debug(f"Run discarded because {exp_ratio} > {ratio}: {this_run}")
 
     return results
