@@ -45,6 +45,7 @@ def main():
     parser.add_argument('--output', required=True, type=Path, help="Output file")
     parser.add_argument('--output-format', default=None, choices=['html', 'txt', 'csv'], help="Output format (default guess from extension, html, txt, or csv)")
     parser.add_argument('--original-words', default=False, action='store_true', help="Show the original words instead of the comparison words")
+    parser.add_argument('--full-names', default=False, action="store_true", help="Use full filename paths")
     parser.add_argument('reference', type=Path, help='Reference transcript')
     parser.add_argument('hypothesis', nargs='+', type=Path, help='Hypothesis transcript(s)')
 
@@ -75,7 +76,7 @@ def main():
     ref = Transcript.load_file(args.reference)
     ref_words = ref.get_words()
     results = {
-        'title': f'Comparison against {args.reference.name}',
+        'title': f'Comparison against {str(args.reference.absolute()) if args.full_names else args.reference.name}',
         'hyp': {},
         'arguments': invocation_args,
     }
@@ -111,7 +112,8 @@ def main():
             dwords = [x.ref if not args.original_words else x.refword for x in d['edits']]            
             dropouts.append({'start': d['start'], 'word_count': len(dwords), 'words': ' '.join(dwords)})        
 
-        results['hyp'][hypname.name] = {
+        hname = str(hypname.absolute()) if args.full_names else hypname.name
+        results['hyp'][hname] = {
             'statistics': cmp.statistics(),
             'edit_statistics': cmp.edit_statistics(),
             'edits': html_difference(cmp.edits(), 
@@ -128,15 +130,15 @@ def main():
         }
 
         # append a WER to the statistics which doesn't include the hallucinations.        
-        hallucination_edit_count = sum([h['word_count'] for h in results['hyp'][hypname.name]['hallucinations']])
+        hallucination_edit_count = sum([h['word_count'] for h in results['hyp'][hname]['hallucinations']])
         #for h in results['hyp'][hypname.name]['hallucinations']:            
         #    hallucination_edit_count += h['word_count']
-        es = results['hyp'][hypname.name]['edit_statistics']
+        es = results['hyp'][hname]['edit_statistics']
         no_hallucinations_wer = ((es['substitutions'] + es['deletions'] + es['insertions']) - hallucination_edit_count )/ es['ref_words']
-        results['hyp'][hypname.name]['statistics']['wer-no-hallucinations'] = no_hallucinations_wer
+        results['hyp'][hname]['statistics']['wer-no-hallucinations'] = no_hallucinations_wer
         #print(f"{hallucination_edit_count} {100 * results['hyp'][hypname.name]['statistics']['wer']:0.2f}, {100 * no_hallucination_wer:0.2f}")
 
-        results['sentence_count'] = len(results['hyp'][hypname.name]['edits'])
+        results['sentence_count'] = len(results['hyp'][hname]['edits'])
 
     outfile: Path = args.output
     if args.output_format == 'html' or outfile.suffix == '.html':
