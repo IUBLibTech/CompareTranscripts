@@ -18,14 +18,15 @@ class Transcript:
             try:
                 t = xscript_class(file)         
                 t.metadata['transcript_file'] = file.name
+                logging.info(f"Loaded {file} as a {xscript_class.__name__}")
                 return t
             except KeyError as e:
-                logging.debug(f"Cannot load {file} as a {type(xscript_class)}: {e}")
+                logging.debug(f"Cannot load {file} as a {xscript_class.__name__}: {e}")
             except Exception as e:
-                logging.exception(f"Cannot load {file} as a {type(xscript_class)}: {e}")
+                logging.debug(f"Cannot load {file} as a {xscript_class.__name__}: {e}")
 
 
-        raise Exception("Cannot determine what kind of transcript this is!")                
+        raise Exception(f"Cannot determine what kind of transcript {file} is!")                
 
 
     def get_words(self, 
@@ -186,7 +187,7 @@ class VTTTranscript(Transcript):
                 continue
             in_text = False
             for line in cue.splitlines():
-                if not in_text and re.match(r'\d+:\d+.+\s+-->\s+\d+:\d+:', line):
+                if not in_text and re.match(r'\d+:\d+.+\s+-->\s+\d+:\d+', line):
                     in_text = True
                 else:
                     # we need to filter some things from the line...
