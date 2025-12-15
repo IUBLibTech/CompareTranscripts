@@ -14,7 +14,7 @@ class Transcript:
     @staticmethod
     def load_file(file: Path) -> 'Transcript':
         """Load a transcript file"""
-        for xscript_class in (ThreePlayTranscript, WhisperTranscript, VTTTranscript, TextTranscript):
+        for xscript_class in (ThreePlayTranscript, WhisperTranscript, VTTTranscript, SRTTranscript, TextTranscript):
             try:
                 t = xscript_class(file)         
                 t.metadata['transcript_file'] = file.name
@@ -209,3 +209,37 @@ class VTTTranscript(Transcript):
         return words
 
 
+class SRTTranscript(Transcript):
+    """Load a SRT file.  At least simple ones.
+    
+    Each block consists of:
+    * a counter
+    * a time range
+    * one or more lines of text
+    * a blank line
+    """
+    def __init__(self, file: Path):
+        super().__init__()        
+        srt = file.read_text()
+        if not (srt.startswith("1\r\n") or srt.startswith("1\n")):
+            raise KeyError(f"Not a SRT transcript")
+        text = ''
+        for cue in re.split(r'\n\n+', srt):
+            lines = cue.splitlines()
+            lines.pop(0) # remove counter
+            lines.pop(0) # remove time range
+            text += ' '.join(lines)            
+        self.data = text
+
+
+    def get_words(self, 
+                  strip_meta: bool=True, 
+                  strip_speaker: bool=True) -> list[str]:
+        words = []
+        for line in self.data.splitlines():
+            if strip_speaker:
+                line = re.sub(r'^[A-Z ]+:', ' ', line)
+            if strip_meta:                
+                line = re.sub(r'\[.*?\]', ' ', line)
+            words.extend(line.split())
+        return words
