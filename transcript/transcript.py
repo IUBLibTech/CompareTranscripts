@@ -228,7 +228,7 @@ class SRTTranscript(Transcript):
             lines = cue.splitlines()
             lines.pop(0) # remove counter
             lines.pop(0) # remove time range
-            text += ' '.join(lines)            
+            text += ' '.join(lines) + " "      
         self.data = text
 
 
