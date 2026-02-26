@@ -46,6 +46,7 @@ def main():
     parser.add_argument('--output-format', default=None, choices=['html', 'txt', 'csv'], help="Output format (default guess from extension, html, txt, or csv)")
     parser.add_argument('--original-words', default=False, action='store_true', help="Show the original words instead of the comparison words")
     parser.add_argument('--full-names', default=False, action="store_true", help="Use full filename paths")
+    parser.add_argument('--no-number-transforms', default=False, action="store_true", help="Don't do number transforms")
     parser.add_argument('reference', type=Path, help='Reference transcript')
     parser.add_argument('hypothesis', nargs='+', type=Path, help='Hypothesis transcript(s)')
 
@@ -85,8 +86,8 @@ def main():
         hyp = Transcript.load_file(hypname)    
         hyp_words = hyp.get_words()
 
-        cmp = Compare(ref_words, hyp_words, 
-                    transforms=[dehyphenate, currency, numbers_to_words, okay, ampersands],
+        cmp = Compare(ref_words, hyp_words,                     
+                    transforms=[dehyphenate, okay, ampersands] if args.no_number_transforms else [dehyphenate, currency, numbers_to_words, okay, ampersands],
                     filters=[strip_case, remove_punctuation, remove_numeric_commas])    
 
         hallucinations = []

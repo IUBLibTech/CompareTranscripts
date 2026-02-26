@@ -14,7 +14,7 @@ class Transcript:
     @staticmethod
     def load_file(file: Path) -> 'Transcript':
         """Load a transcript file"""
-        for xscript_class in (ThreePlayTranscript, WhisperTranscript, VTTTranscript, SRTTranscript, TextTranscript):
+        for xscript_class in (ThreePlayTranscript, WhisperTranscript, JSONTextTranscript, VTTTranscript, SRTTranscript, TextTranscript):
             try:
                 t = xscript_class(file)         
                 t.metadata['transcript_file'] = file.name
@@ -47,6 +47,36 @@ class TextTranscript(Transcript):
         super().__init__()
         self.type = "Text"
         self.data = file.read_text().strip()
+
+
+    def get_words(self, 
+                  strip_meta: bool=True, 
+                  strip_speaker: bool=True) -> list[str]:
+        words = []
+        for line in self.data.splitlines():
+            if strip_speaker:
+                line = re.sub(r'^[A-Z ]+:', ' ', line)
+            if strip_meta:                
+                line = re.sub(r'\[.*?\]', ' ', line)
+            words.extend(line.split())
+        return words
+
+
+class JSONTextTranscript(Transcript):
+    """A transcript which is simply a JSON file with a text key at the top"""
+    def __init__(self, file: Path):
+        super().__init__()
+        self.type = "JSONText"        
+        try:
+            with open(file) as f:
+                data = yaml.safe_load(f)
+        except Exception as e:
+            raise KeyError(e)
+        
+        try:        
+            self.data = data['text'].strip()
+        except Exception as e:
+            raise KeyError(e)
 
 
     def get_words(self, 
